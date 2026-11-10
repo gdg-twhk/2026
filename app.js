@@ -1,3 +1,24 @@
+// Drive the word ticker directly so CSS motion preferences cannot stop it.
+(()=>{
+ const track=document.querySelector('.ticker>div');
+ if(!track)return;
+ const original=track.innerHTML;
+ const copy=document.createElement('span');
+ copy.style.margin='0';
+ copy.innerHTML=original+'&nbsp;';
+ track.replaceChildren(copy,copy.cloneNode(true));
+ track.style.setProperty('animation','none','important');
+ let offset=0,previous=0;
+ function animate(now){
+  const elapsed=previous?Math.min(now-previous,64):0;
+  previous=now;
+  const distance=copy.getBoundingClientRect().width;
+  if(distance>0){offset=(offset+elapsed*.028)%distance;track.style.transform=`translate3d(${-offset}px,0,0)`;}
+  requestAnimationFrame(animate);
+ }
+ document.addEventListener('visibilitychange',()=>{previous=0});
+ requestAnimationFrame(animate);
+})();
 const menu=document.querySelector('.menu'),nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'關閉選單':'開啟選單');menu.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','開啟選單');menu.textContent='☰'}));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open'))menu.click()});
 const tracks={ai:{n:'01',title:'讓想像，<br>有實作的可能。',copy:'從生成式 AI 到機器學習應用，探索模型如何走進開發流程，讓你的下一個點子找到起點。',image:'braces',alt:'程式大括號貼紙',code:'Hello, possibilities.',color:'#c3ecf6'},cloud:{n:'02',title:'把想法，<br>帶到更大的世界。',copy:'探索雲端架構與基礎設施，從部署服務到維運，思考如何讓應用程式穩定成長。',image:'hash',alt:'井字號貼紙',code:'Build. Deploy. Grow.',color:'#ccf6c5'},web:{n:'03',title:'每一個介面，<br>都是新的連結。',copy:'從瀏覽器到行動裝置，一起探索開發工具、效能與使用體驗，讓好的點子被更多人使用。',image:'slashes',alt:'程式斜線貼紙',code:'Create something people love.',color:'#f8d8d8'},community:{n:'04',title:'你的下一步，<br>有人一起走。',copy:'交流職涯經驗、開源協作與社群故事，在技術之外，找到能一起學習的夥伴。',image:'pink',alt:'相向角括號貼紙',code:'Better, together.',color:'#ffe7a5'}};
 document.querySelectorAll('[data-track]').forEach(button=>button.addEventListener('click',()=>{const t=tracks[button.dataset.track];document.querySelectorAll('[data-track]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button))});document.querySelector('#track-number').textContent='EXPLORE / '+t.n;document.querySelector('#track-title').innerHTML=t.title;document.querySelector('#track-copy').textContent=t.copy;const img=document.querySelector('#track-image');img.src='assets/'+t.image+'.png';img.alt=t.alt;document.querySelector('#track-code').textContent=t.code;document.querySelector('.track-feature').style.background=t.color;button.style.background=t.color;document.querySelectorAll('[data-track]').forEach(b=>{if(b!==button)b.style.background=''})}));
