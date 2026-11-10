@@ -24,3 +24,6 @@
 .photo-gallery .photo-marquee{overflow:hidden}
 .photo-gallery .photo-track{will-change:transform}
 .photo-gallery .photo-group[aria-hidden=true]{display:flex}
+
+/* Remove trailing negative tracking so the visible word centers between the braces. */
+#hero-title span:last-child{letter-spacing:0}
