@@ -95,13 +95,21 @@ if(photoGallery&&photoPause){
  updatePhotoPause();requestAnimationFrame(animatePhotos);
 }
 
-// Touch devices cycle the heading through the four brand colors every half second.
+// On touch screens, simulate hovering over one letter at a time.
 (()=>{
  const touchHeading=matchMedia('(hover: none) and (pointer: coarse)');
- const letters=document.querySelectorAll('#hero-title span');
- const colors=['#4285f4','#ea4335','#f9ab00','#34a853'];
+ const letters=Array.from(document.querySelectorAll('#hero-title span'));
+ const colors=['#4285f4','#ea4335','#f9ab00','#4285f4','#34a853','#ea4335','#4285f4'];
  let timer=0,index=0;
- function paintHeading(){if(document.hidden)return;letters.forEach((letter,i)=>{letter.style.color=colors[index];letter.style.setProperty('transition','transform .28s cubic-bezier(.2,.8,.2,1),color .2s','important');letter.style.transform=(i+index)%2?'translateY(-7px) rotate(-3deg)':'translateY(0) rotate(3deg)';});index=(index+1)%colors.length;}
+ function paintHeading(){
+  if(document.hidden)return;
+  letters.forEach((letter,i)=>{
+   letter.style.color=i===index?colors[i]:'var(--ink)';
+   letter.style.setProperty('transition','transform .28s cubic-bezier(.2,.8,.2,1)','important');
+   letter.style.transform=i===index?'translateY(-7px) rotate(-3deg)':'translateY(0) rotate(0)';
+  });
+  index=(index+1)%letters.length;
+ }
  function updateHeading(){clearInterval(timer);letters.forEach(letter=>{['color','transform','transition'].forEach(property=>letter.style.removeProperty(property))});index=0;if(touchHeading.matches){paintHeading();timer=setInterval(paintHeading,500);}}
  touchHeading.addEventListener('change',updateHeading);updateHeading();
 })();

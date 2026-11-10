@@ -25,5 +25,7 @@
 .photo-gallery .photo-track{will-change:transform}
 .photo-gallery .photo-group[aria-hidden=true]{display:flex}
 
-/* Remove trailing negative tracking so the visible word centers between the braces. */
-#hero-title span:last-child{letter-spacing:0}
+/* Keep the word on one line and fit the title row on narrow screens. */
+.title-row{flex-wrap:nowrap}
+#hero-title{white-space:nowrap;flex-shrink:0}
+@media(max-width:650px){#hero-title{font-size:16vw}.brace{font-size:21vw}}
