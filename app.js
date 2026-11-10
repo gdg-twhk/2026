@@ -110,6 +110,6 @@ if(photoGallery&&photoPause){
   });
   index=(index+1)%letters.length;
  }
- function updateHeading(){clearInterval(timer);letters.forEach(letter=>{['color','transform','transition'].forEach(property=>letter.style.removeProperty(property))});index=0;if(touchHeading.matches){paintHeading();timer=setInterval(paintHeading,1300);}}
+ function updateHeading(){clearInterval(timer);letters.forEach(letter=>{['color','transform','transition'].forEach(property=>letter.style.removeProperty(property))});index=0;if(touchHeading.matches){paintHeading();timer=setInterval(paintHeading,800);}}
  touchHeading.addEventListener('change',updateHeading);updateHeading();
 })();
