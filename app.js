@@ -69,6 +69,28 @@ document.addEventListener('visibilitychange',scheduleTrack);
 reducedMotion.addEventListener('change',e=>{if(e.matches){autoplayEnabled=false;updateAutoplay()}});
 updateAutoplay();
 
+// Use frame-based motion for both photo rows, including Safari.
 const photoGallery=document.querySelector('.photo-gallery');
 const photoPause=document.querySelector('.gallery-pause');
-if(photoGallery&&photoPause){let photosPaused=reducedMotion.matches;function setPhotosPaused(){photoGallery.classList.toggle('is-paused',photosPaused);photoPause.setAttribute('aria-pressed',String(photosPaused));photoPause.textContent=photosPaused?'繼續照片輪播':'暫停照片輪播'}photoPause.addEventListener('click',()=>{photosPaused=!photosPaused;setPhotosPaused()});reducedMotion.addEventListener('change',e=>{if(e.matches){photosPaused=true;setPhotosPaused()}});setPhotosPaused()}
+if(photoGallery&&photoPause){
+ let photosPaused=false,hovered=false,focused=false,previous=0;
+ const rows=Array.from(photoGallery.querySelectorAll('.photo-track')).map((track,i)=>{
+  track.style.setProperty('animation','none','important');
+  return {track,group:track.querySelector('.photo-group'),offset:0,direction:i===1?-1:1,duration:i===1?72:65};
+ });
+ function updatePhotoPause(){photoGallery.classList.toggle('is-paused',photosPaused);photoPause.setAttribute('aria-pressed',String(photosPaused));photoPause.textContent=photosPaused?'繼續照片輪播':'暫停照片輪播'}
+ photoPause.addEventListener('click',()=>{photosPaused=!photosPaused;updatePhotoPause()});
+ photoGallery.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')hovered=true});
+ photoGallery.addEventListener('pointerleave',()=>{hovered=false});
+ photoGallery.addEventListener('focusin',e=>{focused=Boolean(e.target.closest('.photo-group a'))});
+ photoGallery.addEventListener('focusout',e=>{focused=Boolean(e.relatedTarget?.closest('.photo-group a'))});
+ document.addEventListener('visibilitychange',()=>{previous=0});
+ function animatePhotos(now){
+  const elapsed=previous?Math.min(now-previous,64):0;previous=now;
+  if(!photosPaused&&!hovered&&!focused){
+   rows.forEach(row=>{const width=row.group.getBoundingClientRect().width;if(!width)return;row.offset=(row.offset+elapsed*width/(row.duration*1000))%width;const x=row.direction===1?-row.offset:row.offset-width;row.track.style.transform=`translate3d(${x}px,0,0)`;});
+  }
+  requestAnimationFrame(animatePhotos);
+ }
+ updatePhotoPause();requestAnimationFrame(animatePhotos);
+}

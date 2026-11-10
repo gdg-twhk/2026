@@ -19,3 +19,8 @@
 
 /* The word ticker keeps its original typography and uses a measured JS track. */
 .ticker>div{width:max-content;will-change:transform}
+
+/* Keep both equal photo groups available for the frame-based loop. */
+.photo-gallery .photo-marquee{overflow:hidden}
+.photo-gallery .photo-track{will-change:transform}
+.photo-gallery .photo-group[aria-hidden=true]{display:flex}
