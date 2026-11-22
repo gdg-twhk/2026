@@ -17,10 +17,11 @@ python3 -m http.server 4173 --directory .
 - 黑色 DevFest 標題於 Hover 時顯示品牌四色
 - 可暫停的主題自動切換與 2025 活動照片雙排跑馬燈
 - 交通指引、參與提醒、社群連結與聯絡方式
+- 頁尾上方的 2026 贊助夥伴 Logo 靜態展示，依交接清單排序並保留品牌比例
 
 ## 內容狀態
 
-日期與場地依官方活動頁，議程、講者及探索主題中的示意內容以主辦單位正式公告為準。2025 照片僅作活動回顧。尚未加入今年場地平面圖、團隊與贊助名單。
+日期與場地依官方活動頁。網站已加入經確認的議程、講者、全天流程、Google Cloud 專場與 2026 贊助夥伴 Logo。探索主題為活動方向介紹，2025 照片僅作活動回顧。尚未加入今年場地平面圖與團隊名單。
 
 官方活動頁：https://gdg.community.dev/events/details/google-gdg-taipei-presents-devfest-taipei-2026/cohost-gdg-taipei/
 

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "check-in",
+    "title": "報到",
+    "type": "activity",
+    "start": "08:30",
+    "end": "09:00",
+    "room": "博雅教學館南側入口大廳",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
+    "id": "opening",
+    "title": "開場",
+    "type": "activity",
+    "start": "09:00",
+    "end": "09:40",
+    "room": "博雅 101",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
+    "id": "group-photo",
+    "title": "合照與早鳥抽獎",
+    "type": "activity",
+    "start": "09:40",
+    "end": "10:00",
+    "room": "博雅 101",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
+    "id": "panel",
+    "title": "Panel",
+    "type": "activity",
+    "start": "10:00",
+    "end": "11:00",
+    "room": "博雅 101",
+    "description": "講者與詳細內容即將公布。",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
+    "id": "closing",
+    "title": "閉幕謝詞",
+    "type": "activity",
+    "start": "17:00",
+    "end": "17:15",
+    "room": "博雅 101",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
+    "id": "closing-draw",
+    "title": "合照與閉幕抽獎",
+    "type": "activity",
+    "start": "17:15",
+    "end": "17:30",
+    "room": "博雅 101",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  }
+]

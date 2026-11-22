@@ -1,0 +1,16 @@
+.sponsors{scroll-margin-top:90px;background:var(--paper);border-top:1.5px solid var(--ink)}
+.sponsor-grid{display:flex;flex-wrap:wrap;justify-content:center;margin:0;gap:16px}
+.sponsor-item{flex:1 1 240px;max-width:calc(33.333% - 11px);margin:0;min-width:0;background:#fff;border:1px solid #ccc;border-radius:4px}
+.sponsor-logo{height:130px;padding:20px;display:flex;align-items:center;justify-content:center}
+.sponsor-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:76px;object-fit:contain}
+.sponsor-google img{width:220px}
+.sponsor-apmic img{width:200px}
+.sponsor-logo-pair{gap:16px;padding-inline:8px}
+.sponsor-logo-pair img{width:calc(50% - 8px);max-height:76px}
+.sponsor-msi img{width:210px;max-height:118px}
+.sponsor-mongodb img{width:200px;min-height:30px}
+.sponsor-adecco img{width:185px}
+.sponsor-tenlong img{width:70px;height:70px}
+@media(max-width:900px){.sponsor-item{max-width:calc(50% - 8px)}}
+@media(max-width:650px){.sponsors{scroll-margin-top:68px}.sponsor-grid{gap:12px}.sponsor-item{flex-basis:100%;max-width:100%}.sponsor-logo{height:112px}}
+

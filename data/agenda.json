@@ -1,0 +1,806 @@
+[
+  {
+    "id": "1375423",
+    "title": "像彈簧一樣往上 - 把教 AI 的判斷存下來",
+    "type": "workshop",
+    "start": "11:10",
+    "end": "12:40",
+    "room": "303",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Career Development, Cyber Security",
+    "description": "忙了一整年，回頭卻說不出自己成長了什麼？\n\n記憶只會留下結果；紀錄留下的是當時為什麼這樣判斷。有了當時的理由，事後才能對答案，人才會變好。而現在每天跟 AI 寫 code，你糾正 AI 的那一刻，就是判斷最清楚的時候，但對話一關，它就消失了。\n\n這場 90 分鐘的\nworkshop，從「為什麼要記」開始，再到「記什麼」：記判斷，不記產出。接著解決最難的部分：紀錄散在十個地方，就讓它從你本來就在用的工具自己長出來，token 安全地存在系統金鑰庫裡。最後把判斷教回給 AI 寫成規則、測它有沒有生效，再接回你 2027 年底想說出的那件事。\n\n離開時你會帶走：一支會自己長出日誌的小程式、一條測過的 AI 規則，以及 2027 的第一條目標。",
+    "outline": "0–10｜為什麼記：忙了一年說不出成長了什麼；有紀錄，人會用四種方式變好（看得見模式、判斷可被修正、同一件事不用講兩次、知道自己有沒有變強）\n\n10–20｜記什麼：記判斷，不記產出。當下糾正 AI 的一句話 → 判斷（什麼情況、選什麼、為什麼）→ AI 照做的規則；好規則四格\n\n20–30｜怎麼不花力氣記：紀錄散在十個地方，靠的不是紀律是摩擦。每個工具一支小程式、AI 只負責整理；token 三不要三要，以及金鑰庫擋不住什麼；講者工作版實際畫面（6 個來源、0 個 token 在檔案裡）\n\n30–50｜Lab 1：長出今天的日誌。gh auth status 確認 token 在系統金鑰庫；撈今天的 commit、PR、review，AI 整理成今天一頁，挑出一條判斷；gitleaks 當 pre-commit 擋 token\n\n50–55｜休息\n\n55–75｜Lab 2：把判斷教回給 AI。把 Lab 1 挑出的判斷照四格寫成規則，開新對話前後對照測它有沒有生效；兩條矛盾規則時 AI 會怎麼選\n\n75–85｜Lab 3：變成明年的成長。站在 2027 年底回頭看，寫下最想說出的一件事和它還差什麼；每月重評：審計畫，也審教給 AI 的規則\n\n85–90｜Q&A、帶走範本\n\n講解約 30 分鐘，其餘時間動手。",
+    "speakers": [
+      {
+        "name": "Cloudia",
+        "tagline": "APP 開發工程師（App Developer, eslite）",
+        "bio": "5 年 Flutter 跨平台 App 開發經驗，參與 10+ 項 App 開發、7 款公開上架。iThome 鐵人賽兩屆完賽、累計 60 篇技術文章，2025 年獲優選。2021 年起每天寫 worklog，2025 年 12 月開始每天覆盤，到今年 12 月剛好滿一年；現在用 AI 把每天的紀錄和判斷整理成一套會自己長出來的系統。"
+      }
+    ]
+  },
+  {
+    "id": "1363597",
+    "title": "What's new in AI Audio?",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 101",
+    "language": "English",
+    "level": "Introductory and overview",
+    "tags": "AI/ML",
+    "description": "A look at the latest Gemini Audio models from the Google DeepMind team. We'll be looking at (and listening to) the latest capabilities in audio understanding, live translation, speech generation, real-time multimodal agents, and music generation.",
+    "outline": "A look at the latest Gemini Audio models from the Google DeepMind team. We'll be looking at (and listening to) the latest capabilities in audio understanding, live translation, speech generation, real-time multimodal agents, and music generation.",
+    "speakers": [
+      {
+        "name": "Thor 雷神 Schaeff",
+        "tagline": "DX at Google DeepMind",
+        "bio": "Thor is a Developer Experience Engineer at Google DeepMind, helping developers build their wildest dreams with Gemini. He started his career building customer-facing engineering teams at Stripe across Europe and APAC, helped Supabase grow from 800 to 2M databases, and established the developer experience team at ElevenLabs. He recently moved from Singapore to NYC and joined Google DeepMind to help developers build with the Gemini API and Google AI Studio."
+      }
+    ]
+  },
+  {
+    "id": "1353992",
+    "title": "AI-Native Ops with Google Antigravity",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "DevOps, AI/ML, Cloud",
+    "description": "How does a small team design, decide, launch, and operate a real MVP product using agentic workflows? This talk walks\nthrough a production system built with Google Gemini Antigravity, deployed on Cloud Run, with Gemini Enterprise Agent Platform\n(GEAP) handling enterprise-grade collaboration where needed. We'll trace several real cases end to end: scheduling jobs in a\ngenerative-content pipeline, caching logic that prevents double-billing the same asset, and root-causing a visual defect in\nproduction — all executed by an Antigravity SDK agent. No framework internals, no slideware — just what actually happened when\na lean team let an agent take on real operational work, including the pitfalls we hit along the way.",
+    "outline": "1.為什麼是「AI-Native」\n2.案例一：生成式內容管線的任務排程（Antigravity\nagent 怎麼決定做什麼、何時做\n3. 案例二：避免同一筆素材重複付費的快取邏輯（去重機制設計）\n4. 案例三：一次真實視覺瑕疵的根因排查與解決（agent 參與除錯的實際過程）\n5. 心得",
+    "speakers": [
+      {
+        "name": "Jimmy Liao",
+        "tagline": "AI GDE, AI MVP",
+        "bio": "作為 AI GDE and AI MVP，Jimmy Liao 致力於智慧製造與金融領域，將 AI 熱潮中的技術債轉化為核心優勢，與客戶協同提升價值與營運效率。\n\n日常生活就是跑步，曾經以跑步為通勤工具之一 (單程 20+ km)。\n\nAs an AI GDE and AI MVP, Jimmy Liao is dedicated to the fields of Smart Manufacturing and Finance, transforming the technical debt from the AI hype into core advantages, and collaborating with clients to elevate value and operational efficiency."
+      }
+    ]
+  },
+  {
+    "id": "1378894",
+    "title": "Gemini AI Classroom Assistant",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 103",
+    "language": "English",
+    "level": "Introductory and overview",
+    "tags": "AI/ML, Firebase, Cloud, Open Source",
+    "description": "A next-generation classroom assistant designed to proactively support students during computer-based tests. Built entirely on Google Cloud and Firebase, this project uses the Gemini AI model not just to detect issues, but to prevent them by providing gentle, real-time guidance to students.\nInstead of being a simple proctoring tool, the AI acts as a Proactive Proctor, a Technical Support Assistant, and a Wellness Coach, creating a more supportive and effective testing environment.\nPowered by Google Technologies\nThis project is a showcase of modern, scalable, and intelligent application development using a suite of powerful Google technologies:\n- Vertex AI: The core AI capabilities are powered by the Gemini Pro model, enabling sophisticated analysis of student activity.\nFirebase: The entire backend and application infrastructure is built on Firebase.\n- Firebase Authentication: For secure and easy user sign-in.\n- Firestore: A scalable NoSQL database for all application data.\n- Cloud Storage for Firebase: To store all student-generated media like screenshots and videos.\n- Cloud Functions for Firebase: For all serverless backend logic, from data processing to AI triggers.\n- Firebase Hosting: To deploy and host the web application globally.\n- Genkit: The AI flows are developed using Genkit, an open-source framework from Google that helps developers build, deploy, and monitor production-ready AI-powered features.\n- Google Cloud Scheduler: To run scheduled tasks for maintenance and automated class management.",
+    "outline": "A next-generation classroom assistant designed to proactively support students during computer-based tests. Built entirely on Google Cloud and Firebase, this project uses the Gemini AI model not just to detect issues, but to prevent them by providing gentle, real-time guidance to students.\nInstead of being a simple proctoring tool, the AI acts as a Proactive Proctor, a Technical Support Assistant, and a Wellness Coach, creating a more supportive and effective testing environment.\nPowered by Google Technologies\nThis project is a showcase of modern, scalable, and intelligent application development using a suite of powerful Google technologies:\n- Vertex AI: The core AI capabilities are powered by the Gemini Pro model, enabling sophisticated analysis of student activity.\nFirebase: The entire backend and application infrastructure is built on Firebase.\n- Firebase Authentication: For secure and easy user sign-in.\n- Firestore: A scalable NoSQL database for all application data.\n- Cloud Storage for Firebase: To store all student-generated media like screenshots and videos.\n- Cloud Functions for Firebase: For all serverless backend logic, from data processing to AI triggers.\n- Firebase Hosting: To deploy and host the web application globally.\n- Genkit: The AI flows are developed using Genkit, an open-source framework from Google that helps developers build, deploy, and monitor production-ready AI-powered features.\n- Google Cloud Scheduler: To run scheduled tasks for maintenance and automated class management.",
+    "speakers": [
+      {
+        "name": "Cyrus Wong",
+        "tagline": "AWS Hero, Microsoft MVP, Google Developer Expert, HKIIT Senior Lecturer",
+        "bio": "Cyrus Wong is an accomplished senior lecturer who oversees the Higher Diploma program in Cloud and Data Centre Administration at the Hong Kong Institute of Information Technology (HKIIT) at IVE(Lee Wai Lee) in Hong Kong. He is a passionate advocate for the adoption of cloud technology across various media and events. With his extensive knowledge and expertise, he has earned prestigious recognitions such as AWS AI Hero, Microsoft MVP - Microsoft Foundry, and Google Developer Expert Cloud(AI).\n黃俊彥是香港香港資訊科技學院(HKIIT)位於 IVE(李惠利)資訊科技系雲端系統及數據中心管理高級文憑的高級講師，擁有豐富的知識和專業技能。他熱衷於在各種媒體和活動中推廣雲端技術。由於他的專業知識和專業技能，他獲得亞馬遜雲端運算服務AI英雄、微軟最有價值專家-Microsoft Foundry和雲端AI的Google開發者專家等著名榮譽稱號，是世上唯一能夠獲得IT業界三巨頭同時公認的專家。"
+      }
+    ]
+  },
+  {
+    "id": "1374812",
+    "title": "用 Agy CLI 與 Gemini 辦完 DevFest Kaohsiung 2026",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML",
+    "description": "辦一場大型社群活動除了寫程式，還有做網站、整理資料、寫宣傳文與編排刊物等繁瑣雜事。本場演講將從 Google Antigravity (Agy) CLI 基礎介紹出發，分享我如何用 Agy CLI 搭配 Gemini 輔助完成 DevFest 高雄場的籌備工作：從建置活動官網和讀取雲端硬碟資料即使更新網站，到訓練出符合個人風格的社群發文 Agent，最後甚至一起完成《高雄社群年刊》的製作。帶你看見將 AI 工具融入真實社群工作流的實戰經驗！",
+    "outline": "1. Google Antigravity (Agy) CLI 快速入門教學 (10 分鐘)\n2. 實戰階段一：活動官網建置與雲端硬碟 Plugin 開發 (10 分鐘)\n3. 實戰階段二：訓練符合個人風格的社群發文 Agent (10 分鐘)\n4. 實戰階段三：用 AI 輔助完成《高雄社群年刊》(10 分鐘)",
+    "speakers": [
+      {
+        "name": "戴維廷 Andy",
+        "tagline": "GDG Kaohsiung Organizer、Android Developer",
+        "bio": "【議程背景與核心價值】\n許多開發者對 AI CLI 工具的印象停留在「幫忙寫 Code 或修 Bug」，但在實際籌備一場大型技術社群活動（DevFest Kaohsiung 2026）的過程中，我嘗試將 GoogleAntigravity (Agy) CLI 與 Gemini 深度整合進所有的非單純寫扣工作流中。\n\n這場分享不是單純的功能介紹，而是真實落地的「從 0 到 1 實戰復盤」。演講將先以淺顯易懂的方式帶聽眾認識 Agy CLI 的運作與擴充架構（Skills / Rules / Plugins / MCP），接著透過四個真實完成的專案案例，展示如何讓 AI 成為解決實務痛點的工作夥伴：\n\n1. 活動官網快速建置與資料連動：透過 Agy CLI 協作開發與維護活動網站。\n2. 缺工具就自己造輪子（Google Drive Plugin）：在處理報名與歷屆活動資料時，為了讓 CLI 能直接讀取 Google Drive 上的文件與試算表，順手開發了一套整合 MCP 與環境自動檢測的 Google Drive 外掛。\n3. 訓練具備個人靈魂的社群發文 Agent：分享如何解決一般 LLM 產出文案常見的「AI 公式感」與「記憶錯亂」，透過結構化的 Rules 與寫作思維調校，讓 Agent 學會我個人的真實發文口氣與社群規範。\n4. 跨界挑戰排版印刷（高雄社群年刊）：分享如何運用 Agy CLI 整理多方社群圖文素材，並協作完成印刷級的《高雄社群年刊》PDF 製作。\n\n【聽眾預期收穫】\n- 快速掌握 Google Antigravity (Agy) CLI 的基礎操作與自訂擴充方式（Skills、Rules、Plugins）。\n- 了解當現成工具不足時，如何快速封裝屬於自己的 CLI Plugin 串接外部服務（以 Google Drive 為例）。\n- 學會如何將個人的「做事習慣與寫作思路」系統化教給 AI Agent，擺脫千篇一律的 AI 罐頭產出。\n- 獲得將 AI 工具從「寫程式助手」延伸至「專案籌備、內容產出與出版排版」全流程的實務靈感。\n\n（註：本議程分享之所有案例皆為籌備 DevFest Kaohsiung 2026 期間真實開發與產出之成果，演講細節與展示範例將依最終活動呈現進一步精煉微調。）"
+      }
+    ]
+  },
+  {
+    "id": "1360447",
+    "title": "Model Armor with LangGraph agent",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 202",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Cloud",
+    "description": "當 AI Agent 透過 MCP 連接企業工具，如果 Tool Description 被投毒，即使伺服器網址與版本沒有改變，也可能影響模型的工具選擇與執行行為。\n\n本場將以 LangGraph agent 與 Vertex AI 重現 MCP Tool Poisoning 攻擊，並透過新版 Google Cloud Agent Platform SDK 將 LangGraph Agent 部署至 Agent Runtime。\n\n接著結合 Model Armor、Cloud Run、Cloud IAM 與 MCP Manifest Pinning 建立多層防護，最後利用 Cloud Logging 與 Tool Receipt 驗證執行結果，探討 Google Cloud 原生安全機制與應用程式授權之間的責任邊界。",
+    "outline": "00–05 分鐘｜MCP Tool Poisoning：當工具說明變成攻擊入口\n介紹 MCP Tool Description 的信任邊界，以及工具描述遭到投毒時，可能對 AI Agent 帶來的風險。\n\n05–10 分鐘｜LangChain × Gemini × Google Cloud 架構\n展示以 LangGraph 為核心、Vertex AI Gemini 提供模型能力、Cloud Run 部署 MCP Server 的整體架構。LangGraph Agent Runtime 介紹。\n\n10–20 分鐘｜Live Demo：MCP Tool Poisoning 攻擊\n透過受控 MCP Server，更動工具描述但維持 Endpoint 與版本資訊，觀察 Gemini Agent 的 Tool Calling 行為，並比較正常與攻擊情境的執行證據。\n\n20–29 分鐘｜建立 Google Cloud Agent Security 防線\n展示 Model Armor 的 LangGraph 整合，以及 MCP Manifest Integrity、Tool Allowlist、Argument Validation 與 Cloud IAM 如何分別處理不同信任邊界。\n\n29–35 分鐘｜如何證明 Agent 真的安全？\n利用 Cloud Logging、Tool Receipt 與安全回歸測試，對照攻擊、偵測、授權與實際執行結果，討論 Model Armor 未覆蓋的風險及應用程式責任。\n\n35–40 分鐘｜總結與 Q&A\n整理安全架構設計原則與企業導入時的注意事項。",
+    "speakers": [
+      {
+        "name": "大魔術熊貓工程師",
+        "tagline": "大魔術熊貓工程師 KoKo｜Microsoft AI MVP",
+        "bio": "大魔術熊貓工程師 KoKo，Microsoft AI MVP，長期研究 LangChain 與生成式 AI 應用架構，持續於 COSCUP、DevFest 等技術社群分享框架原始碼解析、AI Agent 開發及企業級實務經驗。近期研究重點包含 MCP、Agent Security、工具授權與 AI 系統安全驗證，並公開完整的 30 篇 AI Agent 資安攻防實戰系列。"
+      }
+    ]
+  },
+  {
+    "id": "1387210",
+    "title": "3 倍推論加速：深度頗析 Gemma 4 Speculative Decoding",
+    "type": "session",
+    "start": "11:10",
+    "end": "11:50",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Advanced",
+    "tags": "AI/ML",
+    "description": "大型語言模型的生成速度，往往受限於逐 Token 解碼。本議程將從 vLLM OpenAI-compatible API 出發，示範如何部署模型、串接既有應用，並比較啟用 Speculative Decoding 前後的生成效能。\n\n接著回顧 Speculative Decoding 從 Draft-and-Verify、Medusa、EAGLE 到動態 Draft Tree 的方法演進，最後拆解 Gemma 4 MTP Assistant 的運作原理：如何利用 Target Model 的隱藏層表示與 KV Cache 產生候選 Token，再由 Target Model 平行驗證。透過實際 Demo、架構解析與效能分析，帶你理解 LLM 推論加速的底層機制、適用情境與實作細節。",
+    "outline": "Part 1：從 vLLM API 到 LLM Inference 加速（6 分鐘）\n- LLM Autoregressive Decoding 的效能瓶頸。\n- vLLM 簡介與 OpenAI-compatible API 的使用方式。\n- 透過 vLLM 部署模型，使用 OpenAI Python SDK 呼叫推論服務。\n- 比較啟用 Speculative Decoding 前後的效能表現，觀察生成速度與延遲變化。\nPart 2：Speculative Decoding 的研究演進（8 分鐘）\n- Draft-and-Verify： 使用較小的 Draft Model 預測多個 Token，再由 Target Model 一次驗證。\n- Medusa： 透過額外的 Prediction Heads 與 Tree-based Attention，同時探索多個候選生成路徑。\n- EAGLE / EAGLE-2： 從 Token-level Prediction 延伸到 Feature-level Prediction，並利用 Dynamic Draft Tree 提升接受率。\n- EAGLE-3： 透過 Multi-layer Feature Fusion 改善 Draft Model 的預測能力。\n- 各種方法的核心差異、優缺點，以及在實際 Inference 系統中的取捨。\nPart 3：Gemma 4 MTP 架構與實作細節（10 分鐘）\n- Multi-Token Prediction 的概念與 Speculative Decoding 的關係。\n- Gemma 4 Target Model 與 Assistant Model 的架構。\n- 如何利用 Target Model 的 Hidden States、共享 Embedding 與 KV Cache。\n- Assistant Model 如何產生候選 Token，以及 Target Model 如何進行 Parallel Verification。\n- vLLM 如何整合 Gemma 4 MTP，解析 speculative configuration 與關鍵參數。\nPart 4：實際 Demo 與效能分析（4 分鐘）\n- 使用 vLLM 啟動 Gemma 4 Inference Server。\n- 啟用 MTP Speculative Decoding。\n- 比較 Baseline 與 MTP 的 Token Generation Throughput、Inter-token Latency。\n- 分析不同硬體、Batch Size 與 Speculative Tokens 數量對效能的影響。\nPart 5：總結（2 分鐘）\n- Speculative Decoding 的設計核心與研究方向。\n- 如何評估是否值得在自己的 LLM Serving 系統中導入。",
+    "speakers": [
+      {
+        "name": "John Lu",
+        "tagline": "Senior Machine Learning Engineer",
+        "bio": "議題背景與重要性\n隨著大型語言模型逐漸從研究走向實際產品，Inference Efficiency 已成為 LLM Production 系統的重要課題。\n\n傳統 Autoregressive Decoding 必須逐 Token 執行模型推論，每產生一個 Token 都需要進行一次新的解碼步驟。即使透過 GPU 平行運算與 KV Cache 優化，生成階段仍可能受到 Memory Bandwidth 與 Sequential Dependency 的限制。\n\nSpeculative Decoding 提供了一個不同的優化方向：不再完全依賴大型 Target Model 逐 Token 生成，而是讓較輕量的 Draft Model 先提出多個候選 Token，再由 Target Model 平行驗證。透過這種方式，在維持原始 Target Model 輸出機率分布的前提下，減少大型模型需要執行的 Sequential Decoding Steps。\n\n這項技術也逐漸從最初的獨立 Draft Model，發展到多頭預測、Feature-level Prediction、Dynamic Draft Tree，以及結合模型本身架構的 Multi-Token Prediction。\n技術內容與研究深度\n本議程不會只停留在 Speculative Decoding 的概念介紹，而是選擇幾個具代表性的研究方法，從架構設計的角度比較它們如何改善 Draft Model 的預測能力與 Token Acceptance Rate。\n\n特別是 Gemma 4 的 MTP 設計，將是本議程的技術重點。\n\nGemma 4 提供專用的 Assistant Checkpoints 作為輕量級 Drafter，與 Target Model 配合使用。其設計並非單純額外載入另一個獨立的小型語言模型，而是進一步利用 Target Model 已計算的 Hidden States、共享 Token Embeddings 與 KV Cache，減少重複計算與記憶體開銷。\n\n在實作層面，將深入說明：\n1. Assistant Model Architecture： 分析輕量級 Assistant Model 如何利用 Target Model 的輸出表示進行後續 Token 預測。\n2. KV Cache Sharing： 說明如何共享 Target Model 的 KV Cache，避免 Drafter 重複計算既有 Context。\n3. Candidate Generation & Verification： 解析 Draft Token 的生成、接受與拒絕機制。\n4. vLLM Integration： 說明 MTP 如何整合進 vLLM 的 Speculative Decoding Pipeline，以及實際部署時的設定方式。\n實作與預期收穫\n本議程將以 vLLM 作為推論服務框架，透過 OpenAI-compatible API 展示如何將底層 Inference Optimization 整合到既有應用，而不需要大幅修改原有的 Client-side 程式碼。\n\n透過啟用 Speculative Decoding 前後的效能比較，讓聽眾理解不同加速方法對 Token Throughput、Inter-token Latency 與整體推論效率的影響。\n\n本議程預期讓參與者能夠：\n- 理解 Autoregressive Decoding 的效能瓶頸與 Speculative Decoding 的設計原理。\n- 認識近期具代表性的 Speculative Decoding 研究及其架構演進。\n- 理解 Gemma 4 MTP Assistant Model 的核心架構與 KV Cache Sharing 機制。\n- 學會使用 vLLM 部署模型並啟用 Speculative Decoding。\n- 建立評估 LLM Inference Optimization 的能力，理解不同方法在實際硬體與 Workload 下的適用情境。\n本議程適合對 LLM、Transformer Architecture、Model Inference 或 AI Infrastructure 有興趣的工程師與研究者。具備基本 Transformer 與 LLM 推論知識即可參與，不要求事先熟悉 Speculative Decoding。"
+      }
+    ]
+  },
+  {
+    "id": "1372152",
+    "title": "LLM Wiki 遇上 DataAgent Kit 一窺次世代資料代理",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 101",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Cloud",
+    "description": "為什麼給頂尖大模型接上 MCP 與資料庫，查企業財報依然滿嘴幻覺？Andrej Karpathy 提出的「三層式 LLM Wiki」點出關鍵：AI 需要的是「預先編譯且持續複利的知識網」，而非每次查詢才盲撈碎片！本議程將實戰拆解 Google Cloud 最新開源三部曲：如何用 kcmd 編譯本地 Markdown Wiki、透過 kcmd 雙向同步至雲端 Knowledge Catalog，最終在 IDE 內以 Data Agent Kit (DAK) 驅動跨雲追查、自動建立 dbt 管線並修復問題！",
+    "outline": "00:00 - 07:00｜從「 RAG」到三層式 LLM Wiki：次世代資料代理三部曲架構\n07:00 - 15:00 ｜LLM Wiki 編譯與 kcmd 雲端目錄雙向同步：終結過期公式與混亂資料湖陷阱\n15:00 - 27:00 ｜Data Agent Kit 跨雲追查與 dbt 自主除錯\n27:00 - 35:00｜引擎蓋拆解：多模態暗數據、kcmd skills-generate 與企業安全護欄\n35:00 - 40:00｜總結、一行安裝指令與開源實驗包 Q&A",
+    "speakers": [
+      {
+        "name": "Owen Wu",
+        "tagline": "Google Cloud Taiwan Customer Solution Architect",
+        "bio": "企業雲端架構師"
+      }
+    ]
+  },
+  {
+    "id": "1358654",
+    "title": "Building a Decision-Driven AI App：決策模型與 Firebase App Check 實作分享",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Firebase, Mobile",
+    "description": "當 App 需要分類內容、判斷優先度或決定下一步行動，如何將 AI 的判斷轉成可執行的產品流程？\n\n本場以決策型 AI App 的建置案例，分享如何透過 Apple Foundation Models 介面整合 Decisions API、Jev 與 Clef，將文字與影像輸入轉成型別化的分類、評分與決策結果。透過實作 demo，探討決策模型與生成式模型的差異，以及如何依信心程度設計自動處理、使用者確認與人工介入的流程。\n\n最後以 Jev 的雲端存取為例，介紹如何結合 Firebase App Check 與 Cloud Functions 後端代理，保護推論入口並隔離 API 金鑰，分享從模型判斷到應用整合的建置經驗與取捨。",
+    "outline": "1. 從需求出發：App 需要 AI 做哪些判斷？｜5 分鐘\n2. 整合 Decisions API、Jev 與 Clef｜10 分鐘\n3. 實作 Demo：讓模型判斷驅動 App 流程｜12 分鐘\n4. 安全接入雲端：Firebase App Check｜8 分鐘\n5. Q&A｜5 分鐘",
+    "speakers": [
+      {
+        "name": "Richard Lee",
+        "tagline": "Google Developer Expert for Firebase",
+        "bio": "TNL Mediagene 技術長，前愛料理與 INSIDE 共同創辦人與技術長。業餘時喜歡開源與 Google 技術，自 2020 年開始被選為 Google Developer Expert for Firebase。"
+      }
+    ]
+  },
+  {
+    "id": "1376498",
+    "title": "Designing with Intelligence: How Designers Can Build Functional Prototypes Using Google AI Studio",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 103",
+    "language": "English",
+    "level": "Intermediate",
+    "tags": "Design, Chrome, AI/ML, Web, Mobile",
+    "description": "Traditional design tools like Figma are static, they show what an interface looks like, but not how dynamic AI and user data behave in reality. When designers and researchers try to build data-driven or intelligent tools, getting past the mockup phase usually hits a massive engineering roadblock. This session explores how to bypass those traditional bottlenecks by leveraging Google AI Studio as an interactive prototyping engine. Drawing from two distinct real-world projects—prototyping a mobile feature by bridging complex ML datasets (like facial structure/expression data) to help a collaborator bypass native development friction, and building a thesis-backed Chrome extension that tracks user telemetry and visual fatigue to dynamically restructure web layout. This session demonstrates how designers can transition from static layouts to fully testable, functional AI prototypes without writing heavy backend infrastructure from scratch.",
+    "outline": "- The Designer's Dilemma: Why static mockups fail in the age of dynamic, user-adaptive AI.\n- Unlocking Google AI Studio as a multimodal reasoning layer for non-traditional builders.\n-Project 1 Deep Dive: Bridging ML dataset outputs from Kaggle (facial structure/expression data) to rapidly prototype functional mobile app logic.\n- Project 2 Deep Dive: Building an adaptive Chrome extension tracking visual fatigue telemetry to dynamically restructure UI elements on the fly.\n- Practical Takeaways on how designers and researchers can validate complex, data-driven ideas rapidly.",
+    "speakers": [
+      {
+        "name": "Jastine Dela Paz",
+        "tagline": "UX Lead, NoteIQ Inc. & Community Lead, GDG Manila",
+        "bio": "Jastine is a Lead Product Designer, researcher, and community leader specializing in user experience for AI/ML and healthcare platforms, with over 8 years of industry experience across tech, game development, advertising, and startups. Currently serving as UX Lead for NoteIQ, an AI-first Electronic Health Record (EHR) clinical platform, she focuses on complex documentation workflows and scalable design systems.\nA passionate advocate for human-centered technology and accessible design, Jastine holds a Master of Design in Interaction Design and Innovation from National Taipei University of Technology (NTUT), where her thesis research explored AI-driven adaptive accessibility frameworks and telemetry-based interfaces. Her academic and practical work includes developing advanced prototypes using Google AI Studio—such as a thesis-backed Chrome extension that monitors user visual fatigue telemetry to dynamically restructure web layouts, and dataset-driven application flows featuring facial structure and expression analysis.\nDeeply committed to the developer and design community, Jastine serves as a Community Lead for Google Developer Groups (GDG) Manila and an Ambassador for Women Techmakers Manila, actively organizing major technical events and driving initiatives to empower the next wave of builders across the region."
+      }
+    ]
+  },
+  {
+    "id": "1376434",
+    "title": "MCP 與 Skills 成了新的投毒管道，你的Gemini Agent剛剛裝了什麼？",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Others, Cyber Security, Chrome",
+    "description": "2026 年，攻擊者轉打你的 AI 助手：套件被夾帶要毒化 Cursor、Claude Code 設定檔的內容，MCP 與 Skills 成了新的投毒管道，連 Gemma 4 發表後不久就有拿掉拒答的改版權重。這場以 Gemini／Antigravity 與本機 Gemma 為例，拆解助手自動裝東西的四條路：套件、設定檔、MCP／技能、模型權重，並示範動手前的三道檢查，帶走加固清單與開源檢查腳本。",
+    "outline": "0–5 分｜開場：除了你打的 npm install，AI 助手今天還替你裝了什麼？2026 年公開事件速覽\n5–13 分｜四條路總覽：① 套件 ② 設定檔（Antigravity 讀的 AGENTS.md／GEMINI.md／.agents/rules，Cursor 的 .cursorrules，hooks）③ MCP／Skills ④ 模型權重（含 Gemma 4）\n13–23 分｜Demo：被放了隱形指令的專案（Live Demo）；助手讀到之後的行為；人眼看不出來，工具怎麼看出來\n23–33 分｜三道檢查：① 進專案前（掃設定檔與隱形字元、檢查 hooks）② 助手動手前（不自動核可、沙箱、對外連線白名單）③ 事後（紀錄、憑證輪替）；模型權重：官方來源、雜湊、改版權重政策\n33–37 分｜開發環境加固清單與開源檢查腳本\n37–40 分｜Q&A",
+    "speakers": [
+      {
+        "name": "Fngi Shiu",
+        "tagline": "GDG Taipei Organizer｜AI 資安",
+        "bio": "GDG Taipei Organizer，DevFest Taipei 2024、2026 總召;\n開源 AI 資安組織 AIDEFEND Labs 兼任 AI 資安資深研究員。\n\n十五年以上全端工程與資安經驗，主要在受監理的金融體系，近年專注 LLM 紅隊、Agentic AI 安全架構與 AI 治理框架（NIST AI RMF、ISO 42001、OWASP LLM／Agentic Top 10、MITRE ATLAS）。\n\n曾於 RSAC 2026、InfoSec Taiwan 2026、COSCUP x UbuCon Asia 2026 分享 AI 安全實戰。相信「先量出來，再談安全」。"
+      },
+      {
+        "name": "Edward Lee",
+        "tagline": "Security Researcher / Creator of AIDEFEND",
+        "bio": "Edward Lee is a Taiwanese-American cybersecurity leader and AI security researcher with over 14 years of experience across the financial services and technology industries. He is the Security Researcher and Creator of AIDEFEND, a practical framework and knowledge base for AI security defenses.\n\nPreviously, Edward served as VP and Lead Cybersecurity Architect at JPMorgan Chase, where he led security architecture and technology risk initiatives. He has also held roles spanning product management, technical consulting, and systems integration at Zoom, Google, and Akamai Technologies.\n\nEdward has spoken at and served as a panelist for international conferences on cybersecurity and AI. He holds a Master of Science in Information Technology – Information Security from Carnegie Mellon University and an MBA from the University of Cambridge. He is also pursuing a part-time Master of Advanced Studies in Artificial Intelligence and Digital Technology at ETH Zurich, with a focus on AI, risk management, and secure systems design."
+      }
+    ]
+  },
+  {
+    "id": "1380307",
+    "title": "Gemma Across GPUs: Benchmarks & Pen Demo",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 202",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML",
+    "description": "How does Gemma perform across different GPUs? This session uses agentperf to benchmark Gemma across GPU configurations, giving attendees a practical reference for understanding performance differences under the tested conditions. We will introduce the benchmark setup, present the results, and discuss what to consider when interpreting comparisons across hardware.\n\nTo conclude, we will demonstrate an interactive application on the Prestige N16 Flip using the Nano Pen. Users can circle content in an image or flowchart and ask Gemma to explain it, answer questions, or generate follow-up questions based on the selection.\n\nAttendees will leave with a clearer picture of Gemma’s performance across the tested GPUs and an example of how the model can be integrated into a visual, pen-driven experience. This session is intended for developers and hardware enthusiasts interested in Gemma performance and practical AI applications.",
+    "outline": "Introduction and Benchmark Setup — 5 minutes\nIntroduce the tested GPUs, Gemma configurations, and agentperf benchmark methodology. Explain the test conditions and how to read the results.\n\nGemma Performance Across GPUs — 20 minutes\nPresent and compare the agentperf results. Discuss observed performance differences, relevant hardware and software configurations, and the limits of the comparisons.\n\nApplication Demo: Circle and Ask with Nano Pen — 10 minutes\nDemonstrate Gemma on the Prestige N16 Flip with Nano Pen interaction. Circle content in an image or flowchart, then ask questions, request explanations, or generate follow-up questions.\n\nQ&A — 5 minutes",
+    "speakers": [
+      {
+        "name": "Iven Chen",
+        "tagline": "Product Marketing Manager, MSI",
+        "bio": "Continuously evolving my role within the PC industry, my career journey has spanned from a Field Application Engineer (FAE) to UX, and currently to Notebook Marketing. I am deeply passionate about exploring how cutting-edge technologies can be practically applied on the front lines."
+      }
+    ]
+  },
+  {
+    "id": "1375930",
+    "title": "從真實產品經驗出發，分享如何打造並落地 AI 驅動的 Flutter UI 品質驗收流程",
+    "type": "session",
+    "start": "12:00",
+    "end": "12:40",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Flutter, AI/ML",
+    "description": "AI 能快速產生 Flutter UI，但產出是否符合設計、能否放進真實產品，仍需要可重複的驗收流程。本議程從真實產品經驗出發，分享如何結合 Widgetbook 打造並落地 AI 驅動的 Flutter UI 品質驗收流程。內容涵蓋系統架構、開發與驗收工作流程，以及如何把驗收結果回饋給 AI，持續修正產出。透過實務案例與 Demo，說明導入時的限制與取捨，讓聽眾帶走可用於自身專案的實作思路。",
+    "outline": "0–5 分鐘：真實產品的 UI 開發與品質驗收問題\n5–16 分鐘：結合 Widgetbook 的 Flutter UI 品質驗收架構與元件分工\n16–27 分鐘：AI 輔助開發、驗收、回饋與修正的完整工作流程\n27–31 分鐘：產品導入的限制、取捨與實務經驗\n31–35 分鐘：Demo（4 分鐘）\n35–40 分鐘：Q&A（5 分鐘）",
+    "speakers": [
+      {
+        "name": "Dustin Liu",
+        "tagline": "Titansoft Product Developer",
+        "bio": "Dustin Liu，從前端、後端一路走到 Flutter，喜歡理解技術背後的運作方式，遇到問題也愛往框架原始碼裡找答案。除了寫產品，也熱衷把開發中遇到的麻煩變成工具。\n\n最近把這份好奇心帶進 AI Agent 與真實產品開發。本著 GIGO（Garbage In, Garbage Out）的態度面對 AI 開發，從需求、上下文到驗收標準都認真對待，探索如何讓 AI 不只寫得快，還能交出經得起驗收的產品。"
+      }
+    ]
+  },
+  {
+    "id": "1384896",
+    "title": "AI-Native Deployment in Media Tech",
+    "type": "session",
+    "start": "12:50",
+    "end": "13:30",
+    "room": "博雅 202",
+    "language": "English",
+    "level": "Advanced",
+    "tags": "AI/ML, Cloud, Web",
+    "description": "A production team needs a highlight edit while footage is still arriving. The AI must find relevant shots, preserve timecodes, respond to editorial changes, and operate within limits on latency, connectivity, and access to sensitive footage. These constraints shape how we deliver AI-native systems in media technology.\n\nDrawing on Zonic's work in professional video production, this session examines three architectural decisions. We will split multimodal understanding, planning, and tool execution across models with explicit handoffs. We will coordinate immediate responses to incoming media with longer-horizon decisions about the edit. Finally, we will keep sensitive workloads and tasks that must survive network disruptions on local infrastructure and use cloud workers for permitted workloads requiring large-scale parallel processing.\n\nA workflow walkthrough will connect these choices to failure recovery, human approval, and delivery criteria. Attendees will leave with practical methods for defining model responsibilities, managing changing production state, and choosing local or cloud execution for video AI workflows.",
+    "outline": "0–4 min | The production brief\nFollow incoming event footage through analysis, shot selection, a rough-cut proposal, and editor review. Define latency, data-access, and delivery constraints.\n\n4–13 min | Divide work across models\nSeparate multimodal understanding, planning, and tool execution. Define handoffs using asset references, timecodes, project versions, and execution results.\n\n13–22 min | Coordinate immediate responses and longer-horizon planning\nHandle new footage and editorial feedback while maintaining the context needed to plan an edit. Examine stale plans and conflicting updates.\n\n22–31 min | Choose local and cloud execution\nRoute work by data sensitivity, connectivity, latency, and compute requirements. Walk through a connection loss and subsequent recovery.\n\n31–36 min | Validate delivery\nReview task completion, timecode accuracy, latency, processing cost, recovery behavior, and the points requiring editor approval.\n\n36–40 min | Q&A",
+    "speakers": [
+      {
+        "name": "Tony Tong",
+        "tagline": "Zonic Tech｜Agentic AI for Video Production",
+        "bio": "Tony Tong 具備工程與研究背景，致力於探索人類專家如何與 AI Agent 在真實工作流程中共同協作。他將 Zonic 的核心定位為 Human–AI Interaction：不是讓 AI 取代創作者，而是讓 Agent 深入專業影視製作流程，承接繁重且高認知負荷的工作，並從專家的修正與品質把關中持續學習。透過 Production Context、多人協作與 Expert–AI Interaction Data Flywheel，Zonic 正在建立一套讓人類專業與 Agentic AI 相互增強的影片製作系統。"
+      }
+    ]
+  },
+  {
+    "id": "1375491",
+    "title": "Go ADK 實戰：自製你的 cli 助手",
+    "type": "workshop",
+    "start": "13:40",
+    "end": "15:10",
+    "room": "301",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML, Golang",
+    "description": "Antigravity CLI 背後到底在跑什麼？\n這場工作坊將用 Google 開源的 ADK Go 親手打造你的 AI CLI，拆解 agent harness 的核心零件：從驅動一切的 agent loop 與 tool calling 開始，接上 MCP 擴充外部能力，再用 Skills 讓 agent 按需載入專業知識，最後以 sub-agent 初探多代理編排。離開時，你將帶走一個可實際使用、持續擴充的個人 AI CLI，並看懂 coding agent 的運作原理。",
+    "outline": "0–20 分：開場與環境 setup\n- 什麼是 Agent Harness？拆解 coding CLI 的組成\n- 安裝 Go、clone 範例 repo、設定 Gemini API key\n- 跑起第一個 console agent，確認環境 OK\n\n20–35 分：Lab 1｜Agent Loop 與 Tool Calling\n- Agent、Runner、Session 如何驅動 loop\n- 寫一個 function tool：讀檔或執行 shell\n\n35–50 分：Lab 2｜MCP\n- 透過 MCP toolset 接入外部工具\n- 觀察 agent 如何在 loop 中選擇工具\n\n50–65 分：Lab 3｜Skills\n- 用 Skills 讓 agent 按需載入專業知識\n- 比較 skill 與 tool 的使用時機\n\n65–80 分：Lab 4｜Orchestration 入門\n- 用 sub-agent 拆分「規劃」與「執行」\n- 簡介 Sequential / Parallel / Loop workflow agents（Demo，不實作）\n\n80–90 分：總結與 Q&A\n- 延伸方向：callbacks、plugins、context compaction",
+    "speakers": [
+      {
+        "name": "Justin",
+        "tagline": "Titansoft, Technical Manager",
+        "bio": "目前任職於新加坡商鈦坦科技\n擔任 Technical Manager 一職\n目前專注於探索 AI 應用的可能性\n以及落地所需考量的 DevOps 架構"
+      }
+    ]
+  },
+  {
+    "id": "1372871",
+    "title": "用 Antigravity 打造互動履歷",
+    "type": "workshop",
+    "start": "13:40",
+    "end": "15:10",
+    "room": "303",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Others, Design, AI/ML",
+    "description": "為什麼別人用 AI 寫的網頁像極簡精品，自己 Vibe Coding 卻充滿廉價的「AI 罐頭感」與空洞套話？這場實戰工作坊請帶著你的現有履歷，我們將使用 Google Antigravity 建立 AGENTS.md 設計與敘事規範，在 90 分鐘內自動過濾敏感個資、把流水帳經歷提煉為具體成果，從零打造支援深淺色模式、多視角切換與互動問答卡的高質感個人履歷網站！\n\n* 參加者自行攜帶電腦，並且有充足的電力。",
+    "outline": "單一講者主講｜90 分鐘 Workshop 時間分配\n\n1. 經驗分享：UX 設計思維 × Agentic Vibe Coding 實戰心法（30 分鐘）\n- 職涯敘事重構：如何跳脫死板的 PDF 流水帳，提煉出打動人的代表作亮點與多維度視角。\n- 告別 AI 罐頭感：示範如何運用 Google Antigravity 與 AGENTS.md 設計規範，控制 AI 產出乾淨俐落的極簡視覺與安全的前端架構。\n\n2. 現場實作：帶著你的履歷，從零生出互動式個人網站（45 分鐘）\n- 基礎建置：使用講者提供的黃金 Prompt，讓 Antigravity 從空資料夾自動建立 AGENTS.md 規範與輕量網站架構（免跑繁重套件安裝，避開展場網路問題）。\n- 內容轉換：匯入個人履歷，自動完成敏感個資遮蔽、白話文亮點提煉，並實作「深淺色模式」、「多視角內容切換」與「互動式問答卡」等動態功能。\n\n3. 成果展示與 Q&A 交流（15 分鐘）\n- 上線前安全檢查要點、作品預覽分享與現場 Q&A。",
+    "speakers": [
+      {
+        "name": "EvA ChU",
+        "tagline": "人本與科技共融發展協會, 創辦人暨理事長",
+        "bio": "擁有超過 16 年的 UX 策略與產品設計經驗，現為 Women Techmakers (WTM) Taipei Ambassador 與人本與科技共融發展協會理事長。自 2020 年起累計主辦 112 場跨領域技術活動、串聯 1,100+ 位講者，並投入 26 場公開演講與 240 小時的職涯導師輔導，影響超過 6,800+ 名科技人才。擅長將十餘年的 UX 設計洞察與商業策略結合，轉化為與業界夥伴交流的實戰養分，透過社群將真實問題帶入討論、與大家一同探索並解決問題。"
+      }
+    ]
+  },
+  {
+    "id": "1371524",
+    "title": "打通AI Ready Data與Agent的任督二脈: 以金融業為例",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 101",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Cloud",
+    "description": "你常覺得你的模型卡到陰，一直幻覺嗎？羨慕別人的Agent為什麼比較聰明嗎？覺得RAG沒辦法正確回答問題嗎? 如果上面三個問題你有任何一個答案是Yes，那歡迎你參加我的Session~\n在這個Session裏，我會扒開RAG的華麗外衣，告訴你他黑暗的一面，並且介紹打造AI Ready Data的竅門：Open Knowledge Format, 如果你覺得他只是一個Format, 希望我的Session會讓你改觀。",
+    "outline": "1. Agent實作的三階段\n2. Context Engineering的挑戰\n3. 打造新一代的AI Ready Data with Simula & OKF\n4. 把OKF融入AI SDLC\n5. 打通任督二脈後的金融資料實戰",
+    "speakers": [
+      {
+        "name": "Shawn Ho",
+        "tagline": "Google, Principal Architect for FSI, GKE Specialist, Gemini AI evangelist",
+        "bio": "apiVersion: shawn.user-guide.io/v1\nkind: practitioner\nmetadata:\n  name: shawnho\n  labels:\n    nickname: dr.ho\n    motto: show.but.dont.tell\n    enjoy: sharing\n    love: [genai, fde, ai-ready EVERYTHING, container, iac, newthings]\nspec:\n  fans: |\n    genai,sre,servicemesh,agile,automation,SRE\n  tendencies: \n    - genai\n    - opentelemetry\n    - kubernetes\n    - servicemesh"
+      }
+    ]
+  },
+  {
+    "id": "1349853",
+    "title": "我跟 Antigravity 一起寫了人生第一首交響曲",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML",
+    "description": "坊間常見的黑盒 AI 音樂生成，是直接根據純文字直接產生波形，產生之後無法修改，也無法按照開發者自己的旋律發展，Antigravity/Gemini 本身就具備撰寫樂譜的能力，只要透過適當的 DSL 引導，就可以按照固定旋律，發展完整的變奏。\n\n這場分享中，會示範如何用同一主題旋律，發展一套 RPG 遊戲中各場景時的音樂。講者也透過這套 DSL，寫出人生地一首交響曲。",
+    "outline": "- 我們要的不只是 AI 生成，而是 AI 與人類協作\n- 人機互動除了模型的能力，還需要有表達力的 prompt 與驗證 AI 結果的工具\n- 使用 DSL 發展變奏與撰寫大型作品\n- 如何將 AI 產生的樂譜帶入後續製作\n- 為 AI 設計一套 DSL 的流程\n- 為你的 DSL 製作 IDE (Web/VSCode)",
+    "speakers": [
+      {
+        "name": "Weizhong Yang a.k.a zonble",
+        "tagline": "Mobile Developer",
+        "bio": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦皮輸入法 macOS 版本。從 2018 年開始接觸 Flutter。"
+      }
+    ]
+  },
+  {
+    "id": "1376495",
+    "title": "When AI Tests the Wrong Requirement",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 103",
+    "language": "English",
+    "level": "Intermediate",
+    "tags": "Web, AI/ML, Open Source",
+    "description": "Every test is green. The feature still breaks the promise you made to users.\n\nHere's how that happens with AI coding assistants: a requirement says \"one registration per attendee,\" but the agent implements \"one registration per email address.\" It writes tests around that interpretation, and everything passes. The code and tests agree. The product requirement doesn't.\n\nIn this code-first session, I'll use Gemini CLI with a small TypeScript registration app to show how to catch that gap. We'll uncover the hidden assumption, turn it into a question a developer can actually answer, test the boundary case the agent missed, and verify a fix against the original failure.\n\nThe workflow draws on Finding Unknowns, an open-source collection of coding-agent skills I've been building to clarify requirements, challenge assumptions and find test blind spots.\n\nRather than asking an agent to \"double-check its work,\" you'll learn a repeatable verification loop that fits normal development and code review. You'll leave with practical ways to tell whether AI-generated code actually satisfies the requirement or merely satisfies its own tests.",
+    "outline": "0–5 min | The green-test trap\n\nIntroduce a registration feature with an ambiguous business rule. Explain how a coding agent can generate internally consistent code and tests around the wrong interpretation.\n\n5–13 min | Reproduce the problem with Gemini CLI\n\nWalk through a small TypeScript application. Ask the coding agent to implement the requirement and inspect the resulting implementation, tests and assumptions. Establish the initial passing baseline.\n\n13–22 min | Make the hidden assumption visible\n\nIntroduce the Finding Unknowns workflow. Use interview-me to identify missing requirements, assumption-test to formulate a falsifiable check, and test-blindspots to investigate a boundary case that passing tests missed.\n\n22–31 min | Prove the correction\n\nClarify the intended business rule. Create a focused regression case, demonstrate its failure against the original behavior, then verify the corrected implementation. Show how to preserve evidence in a pull request.\n\n31–35 min | Make the workflow reusable\n\nDiscuss skill installation, review checkpoints, CI integration, and why an agent's own confidence is not independent evidence.\n\n35–40 min | Q&A\n\nDiscuss when to ask a human for clarification, which assumptions merit experiments, and when the evidence remains inconclusive.",
+    "speakers": [
+      {
+        "name": "Shilpa Mitra",
+        "tagline": "Co-founder & CEO, FlowStacks | Building infrastructure and developer tools for AI agents",
+        "bio": "Shilpa Mitra is the co-founder and CEO of FlowStacks, where she works on AI-agent reliability, verification, and developer tooling. She has more than 15 years of software development experience and over eight years of experience building AI-based systems. She previously co-founded ShufflUp, a VC-funded Estonian AI trading startup. Her current work focuses on verification methods for agentic software, including open-source approaches to finding hidden assumptions and gaps in AI-generated tests. She also contributes to the AI research community as a reviewer focused on agents, evaluation, and reliability."
+      }
+    ]
+  },
+  {
+    "id": "1367345",
+    "title": "LINE Bot 進化論：從 GenAI 到 Agent Platform",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Others",
+    "description": "LINE Bot 不只會聊天，還能幫你完成任務！從 Gemini GenAI、Google ADK 到 Gemini Enterprise Agent Platform，帶你探索 LINE Bot 的三階段進化，看看 AI 如何從「會回答」變成「會做事」，再走向部署與實際應用。透過實作案例，一起打造真正能派上用場的 AI Agent！",
+    "outline": "01｜LINE Bot 的進化，從聊天開始 （5 min）\n從 GenAI Bot 到 AI Agent，為什麼光會回答問題已經不夠？\n02｜Google ADK：讓 LINE Bot 開始做事！（8 min）\n透過 ADK 與 Tools，讓 Bot 能理解需求、呼叫工具並執行任務。\n03｜Agent 做出來了，然後呢？ （10 min）\n認識 Gemini Enterprise Agent Platform，了解它如何支援 Agent 的部署、管理、監控與安全治理。\n04｜實戰！讓 LINE Bot 進化成真正的 AI 服務 （12 min）\n展示 LINE Bot 如何與 Agent Platform 上的 Agent 整合，從使用者訊息一路走到任務完成。\n05｜你的下一個 AI Agent，準備上線！ （5 min）\n整理 GenAI、ADK 與 Agent Platform 的角色差異，以及從原型走向實際應用的關鍵。",
+    "speakers": [
+      {
+        "name": "Zona Wang",
+        "tagline": "LINE 台灣 Tech Evangelist",
+        "bio": "Hi，我是 Zona，來自 LINE Taiwan DevRel 團隊。 負責規劃與推廣開發者關係相關活動，包含技術社群合作、品牌推廣與內容策展， 持續推動 LINE 與開發者社群的連結與交流。"
+      }
+    ]
+  },
+  {
+    "id": "1374423",
+    "title": "說好的AI coding，怎麼變組織改造？",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "DevOps, Others",
+    "description": "原本期待 AI 加速開發，卻先遇到 SA 的參與門檻、老系統的歷史包袱，以及模糊的需求交接界線。本議程從開發團隊的視角，探討如何以 Spec 標準與工單檢核建立進件機制，再由開發團隊運用 AI 產碼、單元測試與回歸測試，串起完整開發 pipeline。從規格補件到開發交付，分享流程設計背後的責任分工與文化挑戰：當 AI 貫穿開發流程，組織如何一起改變？",
+    "outline": "一、說好的 AI 產碼，怎麼先卡在交接？（5 分鐘）\n\n1.企業對 Spec to Code 的期待與開發現場的落差。\n\n2.SA 的參與門檻、老系統的歷史包袱與既有工作習慣。\n\n3.為什麼買了工具，還需要重新討論工作方式？\n\n二、先把界線畫清楚：什麼 Spec 可以進開發？（10 分鐘）\n\n1.定義需求範圍、業務規則、介接資訊、例外情境與驗收條件。\n\n2.區分 SA 應交付的需求資訊與開發團隊負責的技術決策。\n\n3.在工單系統中，由 AI 依共同標準檢查缺漏、歧義與矛盾。\n\n4.不符標準時提出具體補件要求，符合後才放行至開發團隊。\n\n5.對 AI 無法判定的情況，保留人工釐清機制。\n\n三、進件之後，讓 AI 串起開發與測試（15 分鐘）\n\n1.開發團隊接手規格，確認技術方案並補足既有系統脈絡。\n\n2.運用 AI 產碼，由開發人員審查、修正與整合。\n\n3.運用 AI 協助單元測試、回歸測試與失敗原因分析。\n\n4.將規格、程式變更與測試結果串接，建立可追蹤的 pipeline。\n\n5.在自動化流程中保留品質關卡與人員責任。\n\n四、Pipeline 串得起來，組織跟得上嗎？（5 分鐘）\n\n1.SA 對規格品質負責，開發團隊對實作與技術品質負責。\n\n2.面對規格整理成本與工作習慣改變，如何降低參與門檻？\n\n3.從補件、返工、品質與整體交付時間觀察效果。\n\n4.分享尚待驗證的假設與未解決的問題。\n\n五、Q&A（5 分鐘）",
+    "speakers": [
+      {
+        "name": "湯姆羊",
+        "tagline": "國泰產險 中台開發科經理",
+        "bio": "一位不專業的軟體工程師，具有超過 15 年的軟體開發與技術管理經驗，專長橫跨後端系統開發、前端架構設計，以及前端團隊的管理與協作。近年來積極投入人工智慧應用的規劃與導入，致力於將 AI 技術與企業需求結合，推動創新與效能提升。\n\n2023 MWC講者\n2024 HWDC講者\n2025 DevFest講者"
+      },
+      {
+        "name": "熊庭緯",
+        "tagline": "國泰產險",
+        "bio": "國泰產險"
+      }
+    ]
+  },
+  {
+    "id": "google-cloud-enablement",
+    "title": "AI Agent Essentials on Google Cloud",
+    "type": "cloud",
+    "start": "13:40",
+    "end": "17:00",
+    "room": "普通教學館 103",
+    "language": "",
+    "level": "",
+    "tags": "Google Cloud, AI Agent",
+    "description": "Google Cloud 專場。詳細議程與講師資訊將陸續公布。",
+    "outline": "",
+    "speakers": []
+  },
+  {
+    "id": "1352595",
+    "title": "Demo 很神、上線卻變災難？AI Agent 走進真實生產環境的防爆生存指南",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 101",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Cloud, AI/ML",
+    "description": "寫一個會聊天、會呼叫工具的 AI Agent Demo只要一個下午，但要讓它安全地幫客戶刷卡、轉帳、還不會把公司預算燒光，往往是一場血淚史！\n\n這場議程不談玄學調Prompt，而是用最真實的踩坑案例，帶大家看懂生產級 AI Agent 的工程防線：從工作流狀態交接、防範 BOLA 越權與 Prompt Injection、保護快取前綴的長對話壓縮，到上線後抓出「光說不做」的對帳飛輪。無論你用哪種框架，都能帶走一套讓你半夜不用起來救火的架構藍圖！",
+    "outline": "• 編排與狀態傳遞：決定性路由切分、結構化狀態面板與人工確認（HITL）閘門。\n• 工具契約與零信任資安：零預設值參數、呼叫者身分注入、防範 BOLA 越權與提示詞注入隔離。\n• 規模化維運與成本治理：外部狀態持久化、長短期記憶分離、快取友善批次壓縮與 HTTP 429 防護。\n• 品質飛輪與部署選型：上線前軌跡評測、上線後資料庫對帳與 GCP 部署拓撲。",
+    "speakers": [
+      {
+        "name": "Michael Chi",
+        "tagline": "Google Solutions Architect, AIoT, Conversational AI, Generative AI",
+        "bio": "在 Google Cloud 擔任 Solutions Architect ，專注領域為IoT, AIoT, Conversational AI和Generative AI。"
+      }
+    ]
+  },
+  {
+    "id": "1370298",
+    "title": "看得見的 Agent，摸得著的雲端",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML",
+    "description": "我與 Antigravity CLI 的人機協作手記：Spec 治理、Cloud Run 落地與 Grafana 復盤\n\n在生成式 AI 狂飆的時代，幾句對話就能變出滿滿的程式碼，但我們卻往往面臨「行為看不見、斷點記不住、雲端摸不著、成本算不清」的黑箱焦慮。\n\n本場議程將以講者使用 Google Antigravity CLI 的真實開發協作為核心，分享如何跳脫盲目的 Vibe Coding，建立全透明的工程化工作流：\n1. **行為守門**：以 Spec 規範與 Hook 腳本為 Agent 裝上硬性行為門禁；\n2. **狀態記憶**：以 OpenSpec 記錄關鍵開發斷點與時間軌跡；\n3. **實體驗證**：以 GCP Cloud Run 迅速將想法容器化，打造看得見的活服務；\n4. **資源具現**：以 Clockify 與 Grafana 儀表板，將人機協作投入的時間具現化復盤。\n\n帶你一起找回現代開發中「看得見的那一半」。",
+    "outline": "我與 Antigravity CLI 的人機協作手記：\n1. **行為守門**：以 Spec 規範與 Hook 腳本為 Agent 裝上硬性行為門禁；\n2. **狀態記憶**：以 OpenSpec 記錄關鍵開發斷點與時間軌跡；\n3. **實體驗證**：以 GCP Cloud Run 迅速將想法容器化，打造看得見的活服務；\n4. **資源具現**：以 Clockify 與 Grafana 儀表板，將人機協作投入的時間具現化復盤。",
+    "speakers": [
+      {
+        "name": "Max Huang",
+        "tagline": "Cloud GDE",
+        "bio": "https://sakanamax.github.io/"
+      }
+    ]
+  },
+  {
+    "id": "1373416",
+    "title": "Demystifying Encryption on Android",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 103",
+    "language": "English",
+    "level": "Intermediate",
+    "tags": "Mobile, Android, Cyber Security",
+    "description": "For years, the Jetpack Security (Crypto) library was the go-to solution for storing sensitive data locally on Android. However, the library was deprecated in 2025 without any explanations. But now a year later, DataStore Tink was released that is supposedly a replacement for the deprecated library. But without understanding why the original Crypto library fell short, one might assume that this new library is the sliver bullet. So, is DataStore Tink a perfect solution or is it not?\n\nThis session is aimed to demystify the inner workings of these encryption libraries, and you'll leave with a clear understanding of the security features of Android OS and the best practices you can use to build a secure modern Android application.",
+    "outline": "- Breaking down why the original crypto library was deprecated\n- Deep dive into how it was implemented\n- Explaining the contradictions in the library\n- Deep dive of core Android encryption system\n- Show what we can do better as dev for encrypting data at rest",
+    "speakers": [
+      {
+        "name": "Vincent",
+        "tagline": "Lead Consultant @ Thoughtworks | GDE Android",
+        "bio": "Software Engineer for 10+ years, Google Developers for Android, Developer of first ever election information app for Myanmar. I consider coding as a craftsmanship."
+      }
+    ]
+  },
+  {
+    "id": "1378211",
+    "title": "給 Vibe Coder 的資安入門",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Cloud, Firebase, Cyber Security, AI/ML",
+    "description": "從 localhost 到 ip 再到一段網址，這可以是一條路通到底，也可以是好多個斷點組合成一條路。而這樣的數位通道似乎有不少「截」點，對於我們躋身成一位 builder 時，該如何理解這些「截」，如何守護一個「節」點而不會變成「劫」難的端點。這次的分享會努力用人話來讓大家理解資訊安全大概都在看什麼。",
+    "outline": "資訊安全的本質\n介紹部份 Google Cloud 與 Firebase 可以做防護的服務與功能",
+    "speakers": [
+      {
+        "name": "Ahdaa/阴達",
+        "tagline": "GDG Taichung  Organizer",
+        "bio": "水映工作坊創辦人。於企業中，以資訊顧問、講師等身份投入協助各種跨場域與跨不同領域所需要之軟體整合，亦善用 AI 加速產品開發或是解決零散問題。\n\n於社群中，是一個愛投入技術研究的 NPC，以 Flutter/Android/Firebase 為主要分享主軸，常出沒於 Google Developer Group Taichung/Taichung 的 Organizer"
+      }
+    ]
+  },
+  {
+    "id": "1374925",
+    "title": "AgentOps: 以 ADK x MCP 打造前瞻型 GCP IAM 自治系統",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 202",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Cloud, AI/ML, DevOps",
+    "description": "IAM 權限管理常是雲端維運之中，跨團隊協作庶務 (Toil) 的最大來源，也是造成專案阻斷與過期特權殘留的痛點。本議程展示 HADES 架構(Human-Approved Declarative Entitlement System) 如何突破傳統; 透過 Google ADK 驅動雲端編排、MCP工具調度或檢驗GCP資源，再結合 Gemini 語音多模態實現 Google Chat 免鍵盤協同; 接著以Linear工單觸發建立權限申請的 Draft PR，或由 Gemini Enterprise 從會議記錄或Gmail 檢測後主動生成權限申請的 Draft PR；後端藉由 FastMCP 唯讀隔離、 Managed Airflow定期腳本檢查、GCP Policy Intelligence 與 Cloud Monitoring SRE 全鏈路監控，將審批週期由數天降至 5 分鐘內，實現零阻斷、零殘留與 85% 維運庶務消減。",
+    "outline": "[40 分鐘議程時間分配大綱]\n\n1. 企業 IAM 的維運庶務 (Toil) 與跨團隊協作痛點 (6 分鐘)\n- 剖析 Google SRE 定義之維運庶務在 IAM 的體現：高達 80% 工時浪費於重複審批與工單拉鋸。\n- 被動申請導致的「專案時程阻斷」與專案結案後的「過期特權殘留」安全黑洞。\n- 傳統靜態 Policy as Code 為何無法驗證運行時 (Runtime) 資源相依性。\n\n2. 跨團隊對話中樞：Google Chat 語音協同與雙軌 Draft PR 觸發 (8 分鐘)\n- 對話即平台：在 Google Chat 整合 Gemini 2.0/2.5 Flash Audio，實現行動端口語意圖抽取與免鍵盤多輪質詢。\n- 雙軌 PR 生成機制：\n* 主動前瞻軌道：Gemini Enterprise 深度整合 Gmail 與 Google Meet 逐字稿，提前 48 小時自動擬定權限 Draft PR。\n* 專案工單軌道：整合 Linear 敏捷工單系統，由工程需求一鍵觸發建立對應之 Draft PR。\n\n3. Google ADK 編排、MCP 工具調度與 GCP Policy Intelligence 雙時態驗證 (10 分鐘)\n- 以 Google Agent Development Kit (ADK) 構建代碼優先圖狀態機，協調多 Agent 執行流。\n- FastMCP on Cloud Run 唯讀工具層：調度與探測 GCP 活躍資源 (Active Resources)。\n- Policy Simulator API 整合：針對待建資源 (In-Flight) 與既有資源執行變更前假設性日誌模擬。\n\n4. 巡檢對帳與 SRE 原生監控：Managed Airflow 與 Cloud Monitoring 告警體系 (8 分鐘)\n- Managed Airflow (Cloud Composer)：排程運行自演化巡檢腳本，定期掃描組織權限盲點與閒置帳號，主動發起廢除 PR。\n- Cloud Run SRE 四大黃金指標：以 Cloud Monitoring 嚴密防禦 Google Chat 5 秒回應逾時限制 (p95 < 4,000ms)。\n- 秒級漂移哨兵：Cloud Audit Logs 搭配 Log-based Metrics 於 10 秒內實時捕捉非受控之 Console 手動異動 (MTTD < 10s)。\n- FinOps 邊界：動態 Model Garden 配額降級與 Ephemeral Sandbox 每日 $10 預算警報。\n\n5. 實體落地閉環、量化效益與 Google Cloud Codelabs 開源推廣 (8 分鐘)\n- 確定性實體閉環：Workload Identity Federation (WIF) 免密鑰 Terraform 套用與不可否認性審計日誌。\n- 效益量化：MTTV 由 4 小時降至 45 秒、審批耗時 < 5 分鐘、專案阻斷率 < 1%、過期特權 0% 殘留、消減 85% 維運庶務。\n- 5 大 Google Cloud Codelabs 模組化規範推動組織架構轉型與現場 Q&A。",
+    "speakers": [
+      {
+        "name": "Rex",
+        "tagline": "主任工程師",
+        "bio": "現任 GCP x DataOps，長期專注於 Google Cloud 基礎架構與最佳實踐、Terraform GitOps、零信任 IAM 治理與 SRE 可觀測性實踐。熱衷於探索 Generative AI 與自主 Agent 在現代平台工程中的落地，近期致力於將 Google ADK、語音多模態與 FastMCP 導入企業級權限與維運管線，推動「AgentOps」自主治理架構，致力於消除繁瑣的工程維運庶務 (Toil)，打造兼具安全合規與高開發者體驗 (DevEx) 的現代雲端自治系統。"
+      }
+    ]
+  },
+  {
+    "id": "1378996",
+    "title": "WebMCP：讓 AI 知道你的網站可以怎麼操作",
+    "type": "session",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Web, AI/ML, Chrome",
+    "description": "隨著 AI Agent 開始理解網頁、呼叫工具並執行任務，網站也需要讓 AI 清楚知道「可以怎麼操作」。本場介紹 WebMCP 的核心概念，透過表單、搜尋與資料查詢案例，示範如何將網站功能公開為結構化工具，減少 Agent 猜測頁面與操作按鈕的需求。分享將涵蓋既有網站的整合方式、工具參數與結果設計、使用者確認及權限邊界，並說明目前瀏覽器支援與實驗性 API 的限制，讓聽眾掌握打造「AI 可操作網站」的起步方法。",
+    "outline": "單一講者，40 分鐘，包含 5 分鐘 Q&A。\n\n0–5 分鐘｜從「AI 看懂網頁」到「AI 知道可以做什麼」\n說明 Agent 依賴畫面與 DOM 操作的限制，以及網站主動提供結構化工具的價值。\n\n5–12 分鐘｜WebMCP 核心概念與瀏覽器支援\n介紹網站、瀏覽器與 AI Agent 的分工，以及 WebMCP 與伺服器端 MCP 的差異。說明實驗性 API、支援條件與功能偵測。\n\n12–22 分鐘｜整合方式：從表單到 JavaScript 工具\n以宣告式表單與命令式 JavaScript 工具為例，說明工具名稱、描述、輸入參數、結果與錯誤回傳的設計。\n\n22–30 分鐘｜實際案例展示\n示範搜尋與資料查詢，並以模擬資料呈現填寫表單及需使用者確認的操作。對照網站正常介面與 Agent 呼叫工具的結果。\n\n30–35 分鐘｜既有網站導入與安全界線\n討論登入狀態、授權、輸入驗證、敏感操作確認、錯誤處理與不支援環境的回退方式。\n\n35–40 分鐘｜總結與 Q&A\n整理最小導入步驟、適用場景及目前限制。",
+    "speakers": [
+      {
+        "name": "李小胖 Bruce Lee",
+        "tagline": "Full-stack Developer & Community Organizer · WordPress Taiwan Community",
+        "bio": "李小胖 Bruce Lee，哈拉設計創辦人、全端開發者，擁有超過 10 年網站開發與自由接案經驗，長期投入 WordPress、Web 開發、AI 與自動化應用。目前為 WordPress 台北小聚主辦人及 GDG Taipei Organizer，持續參與技術社群與開源活動。近年專注於 AI Agent、WebMCP、生成式 AI 與開發工作流，探索如何讓 AI 從「回答問題」進一步理解網站、操作工具，並真正參與產品開發與日常工作流程。"
+      }
+    ]
+  },
+  {
+    "id": "1387677",
+    "title": "用 AI 速度打敗 AI 攻擊：CodeMender 如何全方位守護你的程式碼與 CI/CD",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 101",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Cloud, AI/ML, Cyber Security",
+    "description": "當開發者習慣用 AI 快速生成功能，攻擊方也正用自動化代理批次探測 API 破口，數天內便將公開 CVE 轉為攻擊腳本；然而傳統靜態掃描只看單一檔案語法，常卡住 CI 流程、拋出大量誤報，卻抓不到跨檔案邏輯漏洞。本議程從工程實戰出發，透過三場 Live Demo 示範如何將資安檢測從「靜態猜測」轉為「自動化沙盒實證」：先在本地隔離沙盒重播真實開源 CVE，確保修補程式同時通過單元測試與攻擊阻斷；接著用無金鑰 OIDC 與 AST 切片，實作二十秒跑完且不幫歷史舊債背鍋的 PR 檢查；最後回到日常 Vibe Coding，實測輕量攔截hook、CodeMender 代理與人工 git diff 審查的分工邊界，並延伸至套件信譽與 SLSA 建置驗證。",
+    "outline": "1. 攻防成本翻轉與核心觀念（6m）\n- LLM 批次探測下的修補時間差；傳統語法比對（SAST）vs. 跨檔案語意推論與本地隔離沙盒實證。\n2. 既有專案漏洞驗證與修補 ＋ Live Demo 1（9m）\n- 三層核心隔離沙盒 PoC 測試與雙重驗證閘門；現場重播真實開源漏洞（Next.js CVE-2025-29927）與自動修補。\n3. 低摩擦 CI/CD PR 檢查 ＋ Live Demo 2（9m）\n- 無金鑰 OIDC 拔除靜態憑證 ＋ Tree-sitter AST 影響半徑切片；現場展示 20 秒攔截新漏洞、隔離舊債並開出修補 PR。\n4. Vibe Coding 安全護欄 ＋ Live Demo 3（9m）\n- 編碼 AI 的快樂路徑盲點；實測 PreToolUse 攔截鉤子、髒工作樹安全修補、Token 快取成本與人工 git diff 權限審查分工。\n5. 延伸架構：從原始碼到供應鏈製品驗證（4m）\n- SLSA 建置簽章互補關係，以及進行中的開源實驗（deps.dev / OSV.dev 幻覺套件攔截與 Binary Authorization）。\n6. 踩坑總結與 Q&A（3m）",
+    "speakers": [
+      {
+        "name": "Edward Chuang",
+        "tagline": "Developer Relations Engineer, Google Cloud",
+        "bio": "身為 Google Cloud 的開發者關係工程師 (Developer Relations Engineer)，Edward 致力於從開發者的視角推廣 Google Cloud 技術。他目前的技術重點聚焦於 DevSecOps、軟體供應鏈安全 (Software Supply Chain Security) 以及基於 ADK (Agent Development Kit) 的 Agentic AI 應用開發。他協助開發者進行導入、部署、優化及擴展，並定期與各類開發者社群互動，深入了解開發者的需求與回饋。在擔任現職之前，Edward曾任職 Google Cloud 客戶解決方案架構師長達九年，期間協助涵蓋遊戲、零售電商、運輸、高科技及傳統製造等多元產業的客戶，運用 Google Cloud 的產品與技術現代化其資訊基礎建設與應用服務。他不僅擅長解決客戶的商業難題並提升技術能力，也是推動企業數位轉型的關鍵倡導者，並同時擔任多家科技新創公司的技術導師。\n\n在加入 Google 之前，Edward 擁有超過 13 年的後端工程與網站可靠性工程 (SRE) 專業經驗。此外，他心中一直有個有趣的夢想：有朝一日能親自駕駛 Google Maps 街景車。"
+      }
+    ]
+  },
+  {
+    "id": "1348483",
+    "title": "Everything as Code：用 Google Antigravity, ADK 與 Open-X 驅動文件自動化",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Open Source, Cloud, AI/ML",
+    "description": "隨著 AI Agent 的發展，產業界正面臨一個巨大的痛點：Agent 擅長邏輯推理與撰寫程式碼，但在處理需要精確排版的日常生產力工具（如 Word、PowerPoint 或 Figma）時卻往往力不從心。與其教 AI 怎麼操作所見即所得（WYSIWYG）軟體，不如將輸出媒介轉換為它最熟悉的領域——程式碼。\n\n本議程將帶您深入專為 Agent 打造的開源生態系「Open-X 專案」（包含 Open-Doc, Open-Slide, Open-Design-frame）。我們將實戰展示如何透過 Google Antigravity 與 Google ADK (Agent Development Kit) 打造強大推理大腦，並藉由 MCP (Model Context Protocol) 介面無縫串接 Open-X。看 Agent 如何直接編寫 React/TSX，自動產出像素級完美的 A4 報表、16:9 簡報與互動設計稿，實現真正的「Everything as Code」極速交付。",
+    "outline": "1. 開頭：從「對話機器人」到「全自動 Agent」 (5 mins)\n\nAgent 的崛起：聽懂需求只是基本，能「動手做」才是神隊友。\n\n2. 核心技術解密：Open-X 專案生態系 (10 mins)\n\n什麼是 Open-X？（涵蓋 Open-Doc, Open-Design-frame 等核心模組介紹）。\n\n打通任督二脈：Agent 如何精準理解意圖，並將自然語言轉換為對生產力工具（如文件、簡報、設計框架）的精確操作（Tool Calling / Function Calling 的實務應用）。\n\n3. 實戰演練與極速交付 (10 mins)\n\nLive Demo / 案例剖析：透過 Google Antigravity 和/或 Google ADK 來展示一個真實工作流。從接收一段模糊的人類指令開始，到 Agent 自動拆解任務、選擇 Open-X 模組、調用工具，最終實現從零到一的產出交付。\n\n4. 總結、未來展望與 Q&A (5 mins)",
+    "speakers": [
+      {
+        "name": "Simon Liu",
+        "tagline": "Google GenAI GDE",
+        "bio": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師 和 在軟體業擔任 MLOps 客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過 80 篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。"
+      }
+    ]
+  },
+  {
+    "id": "1369240",
+    "title": "AI: End of Jobs or Start of Freedom?",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 103",
+    "language": "English",
+    "level": "Introductory and overview",
+    "tags": "Cloud, AI/ML, Career Development",
+    "description": "AI 正在改寫開發者的工作。這是工作的終點，還是創造價值的方式在轉變？我走了兩條路。作為獨立 builder：用 AI 兩週做出月收 1,000 美元的副業。作為工程師：AI 自信地答錯時，我用 tcpdump 和重現環境找到真正原因。你不必什麼都懂，但要懂到能檢查。這場演講也是例子：我不會說中文。前半場我用英文分享；後半場每一頁我先講英文，再由 Gemini TTS 用自然的中文講一次，AI 說錯的地方交給你來驗證。\n\nAI is rewriting what it means to be a developer. It can write, test and deploy code faster than I can. That is exciting, and unsettling.\n\nBut what if this isn't the end of our jobs, but a shift in how we create value? I walked two paths.\n\nAs an independent builder, I used AI to build a side project in two weeks that now makes about US$1,000 a month. Claude wrote the code, Gemini TTS powers the service, and Imagen and Veo made the visuals.\n\nAs an engineer, I chased one lost packet across three clouds. AI gave confident answers that were wrong. tcpdump and a reproduction found the real cause.\n\nAI gives answers. Experts give verified answers. You don't need to know everything, but you need to know enough to check.\n\nThis talk is one more example. I don't speak Mandarin. In the second half, I speak English and Gemini TTS says each slide again in natural Mandarin. I can't check it. You can.",
+    "outline": "40-minute regular session: about 32 minutes of talk and 8 minutes of Q&A.\n\n0-3 min | Intro: who I am, and the question: is AI the end of our jobs? (English)\n3-14 min | Path 1, independent builder: a side project built in two weeks with Claude, Gemini TTS, Imagen and Veo, now making about US$1,000 a month. Five practical tips. (English)\n14-15 min | The switch: from here, I say each slide in English first, then Gemini TTS says it again in Mandarin.\n15-27 min | Path 2, engineer inside a company: one lost packet across three clouds. AI's confident wrong answers, and how tcpdump and a reproduction found the real cause. What this means for junior engineers. (English + AI Mandarin)\n27-32 min | Wrap-up: AI gives answers, experts give verified answers. The audience checks the AI's Mandarin. Every mistake they catch shows why people are still needed. (English + AI Mandarin)\n32-40 min | Q&A",
+    "speakers": [
+      {
+        "name": "Hyomin Kim (Derek)",
+        "tagline": "Tetrate, SRE",
+        "bio": "Hyomin Kim (Derek) is an SRE at Tetrate, based in Sydney, Australia. He works on networking, platform engineering, DevOps, FinOps and security in multi-cloud environments. He is a Google Developer Expert (GDE) for Cloud, specializing in network and security. He has spoken at DevFest and Google I/O Extended events about cloud technologies and best practices."
+      }
+    ]
+  },
+  {
+    "id": "1377254",
+    "title": "裝了工具不等於自動化：用 Antigravity 打造「可驗證」的 AI 開發工作流",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML",
+    "description": "安裝 AI 工具不等於擁有自動化能力。真正的瓶頸不在「AI 會不會寫」，而在「怎麼證明它做對了」。本場次以 Antigravity 為例，拆解一條可落地的 AI 工作流：先把需求問清楚、拆成可驗證的小任務、讓實作與審查分離、交件時附上截圖與測試證據，最後把反覆犯的錯變成環境防護欄。不講 prompt 技巧，講流程設計。聽完你將帶走一張可以直接套用在自己專案上的工作流骨架，以及循序放大 AI 授權的四階信任曲線。",
+    "outline": "過去一年，大家都裝了 AI 編碼工具，但多數人的使用方式仍停留在「開一個對話、丟一個需求、人工檢查結果」。產量沒有明顯提升，反而多了一個要盯著的「實習生」。\n\n我自己在實際導入的過程中發現，問題從來不是「AI 寫不出來」，而是沒有一套流程讓 AI 的產出能被快速、可靠地驗證。沒有驗證，就不敢放手；不敢放手，自動化就只是口號。產量是信任的結果，而信任必須靠驗證與環境一步步建立。\n\n本場次把這些經驗整理成一條任何團隊都能起步的工作流，並用 Antigravity 的 Agent Manager、Artifacts 與瀏覽器驗證能力示範它如何落地。",
+    "speakers": [
+      {
+        "name": "ATai",
+        "tagline": "奧斯數位 技術總監",
+        "bio": "現任微軟最有價值專家，樂於研究與分享新技術，喜歡使用各項網頁技術解決各項問題。主要專研 .NET 相關 Solution 為主，以及 Angular & Vue.js 等前端技術，並在第十二屆 iT 邦幫忙鐵人賽中的 Modern Web 組獲得佳作。於 2022 年出版 ASP.NET Core 6 實戰守則：超易懂的跨平台開發入門教學，並榮登天瓏年度排行第二名"
+      }
+    ]
+  },
+  {
+    "id": "1375668",
+    "title": "幫我做一下：從一份需求到品牌推廣方案",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 202",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML, Others",
+    "description": "「我們有一個新品牌，幫我準備推廣方案。」面對這樣的需求，AI Agent 該先問什麼，又該如何安排工作？本分享規劃以 Gemini 與 Google ADK 建立小型示例，從自備品牌與商品資料出發，釐清目標、整理賣點、比較推廣方向，逐步形成提案草稿。除了展示產出，也將拆解資料整理、工具呼叫、人工確認與內容檢查，討論如何把模糊需求轉化為有依據、可修改的方案，而不只是生成一份看似完整的文件。",
+    "outline": "本議程由單一講者分享，共40分鐘，包含6分鐘問答。\n\n0–5分鐘｜從一句「幫我做一下」開始\n確認推廣目標、既有資料、限制與完成條件，說明哪些資訊需要先向使用者確認。\n\n5–13分鐘｜整理品牌與商品資料\n以自備的模擬資料為例，整理品牌定位、商品賣點、客群假設及待確認資訊，區分事實與推測。\n\n13–23分鐘｜從資料到品牌推廣方案\n比較不同推廣方向，形成提案草稿，拆解 Gemini、Google ADK 與工具的分工，說明各步驟的輸入與輸出。\n\n23–29分鐘｜人工確認與方案修改\n檢查建議是否有資料依據、是否符合品牌定位，展示如何依照人工回饋修訂內容。\n\n29–34分鐘｜錯誤、限制與實作心得\n根據實測結果分享問題與限制，整理可重用的流程檢查清單。\n\n34–40分鐘｜現場問答",
+    "speakers": [
+      {
+        "name": "Rain Chow",
+        "tagline": "AI 產品工作者｜關注 AI Agent 的辦公與生活應用",
+        "bio": "目前居住於日本，從事 AI 模型相關的產品工作，主要關注 AI Agent 在日常辦公與生活中的應用，探索如何將模糊的需求轉化為具體、可檢查、可修改的工作成果。希望透過實作分享與社群交流，了解不同場景中的使用需求與技術取捨。\n\n您好，我正在提交 DevFest Taipei 2026 的講者提案。表單中的 Speaker Photo 為必填項目，想請問是否可以使用非真人的個人插畫頭像？另外，這張圖片是否會公開於活動網站或宣傳素材，以及是否可以在入選後再補交？因個人隱私考量，希望先確認，謝謝！"
+      }
+    ]
+  },
+  {
+    "id": "1361498",
+    "title": "當 API Gateway 遇上 MCP：讓企業既有 API 變成 AI Agent 的工具",
+    "type": "session",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Web, Cloud",
+    "description": "當 AI Agent 開始從「回答問題」走向「實際執行任務」，如何讓 Agent 安全且有效地使用企業既有系統，成為新的整合挑戰。許多企業早已透過 REST API 與 API Gateway 建立成熟的服務架構，如果為了導入 AI Agent，就必須重新開發與維護大量 MCP Server，不僅增加開發成本，也可能讓既有的驗證、權限控管、流量限制與稽核機制重新再造一次。\n\n隨著 MCP 逐漸成為 AI Agent 存取外部工具與服務的重要介面，API Gateway 也開始扮演新的角色：不只是管理 API，而是成為既有服務與 AI Agent 之間的橋樑。本次分享將從企業常見的 REST API 架構出發，介紹如何透過 API Gateway 將既有 API 轉換為 Agent 可以 Discover 與 Call 的 MCP Tools，並探討 Authentication、Authorization、Rate Limit、Logging 與 Tool Discovery 等實際導入時需要面對的問題。",
+    "outline": "- AI Agent 時代的企業 API 挑戰：從 REST API 到 MCP Tools，為什麼企業需要新的整合方式？\n- API Gateway 與 MCP 的整合架構：介紹 API Gateway 如何透過 OpenAPI 將既有 API 轉換為 MCP Tools。\n- 實戰 Demo：透過 API Gateway，讓 AI Agent 發現並呼叫既有 REST API，無須修改後端服務。\n- 企業導入的挑戰：探討 Authentication、Authorization、Rate Limiting、Observability 與 GitOps 管理。\n- 總結與未來展望：API Gateway 如何從傳統 API 管理平台，轉型為 AI Agent 的工具入口。",
+    "speakers": [
+      {
+        "name": "Johnny Sung",
+        "tagline": "Full stack developer",
+        "bio": "A full-stack developer. I like open-source solutions and new technologies. Currently a DevOps/SRE in the insurance industry."
+      }
+    ]
+  },
+  {
+    "id": "1368715",
+    "title": "使用 Antigravity CLI 打造兒童教育遊戲軟體",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 101",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "AI/ML, Cloud",
+    "description": "我想分享自己如何運用 Antigravity CLI 搭配 Gemini API 與多模態 LLM，打造一款真正能用的兒童教育遊戲。以我過去的真實作品為例：把 108 課綱的數學學習目標拆解成可驗證的遊戲任務，再用 AI 依序完成遊戲企劃、音樂設計、場景規劃與遊戲邏輯實作。過程中會完整拆解從自然語言需求、模型選型、多模態素材生成，到除錯與測試的每個環節，並公開提示詞範本與踩坑心得，讓你也能把 AI 變成一條穩定的生產線。",
+    "outline": "- Antigravity CLI 與模型選型\n- 遊戲企劃生成\n- 音樂與場景設計\n- 遊戲邏輯實作與 108 課綱對齊\n- 實務陷阱與建議\n- Q&A",
+    "speakers": [
+      {
+        "name": "Will 保哥",
+        "tagline": "Duotify Inc, CTO",
+        "bio": "Currently the CTO of \"Duotify Inc.\" Awarded the Google Developer Expert (GDE) in ML/GenAI in 2024. Awarded the Google Developer Expert (GDE) in Angular in 2018. Selected as a Microsoft Most Valuable Professional (MVP) for 17 consecutive terms. Recognized as a Microsoft Regional Director in 2019. Proficient in technologies related to Angular, JavaScript, .NET, C#, Java, Go, Docker, and Kubernetes. Skilled in DevOps, organizational culture building, software team construction, and management. Passionate about sharing knowledge."
+      }
+    ]
+  },
+  {
+    "id": "1376458",
+    "title": "我用 AI 參與了藝術展覽：當程式技術變得便宜之後",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 102",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "AI/ML, Career Development",
+    "description": "如何用 gemini/antigravity 參與了藝術家崔廣宇的作品製作，在台灣以及英國展覽。在 AI 讓程式設計的門檻及成本降低之後，固然讓程式設計師有被取代的風險，但另外一方面，也打開了更多程式設計應用的途徑和面向。除了介紹這個作品中 AI 參與的過程，也討論相關技術擴展的範例和可能性。",
+    "outline": "* 工程師的危機？\n從程式設計師面對的替代風險與職涯焦慮切入，探討 AI 如何降低開發、技術整合與試錯的成本。借鏡電腦與網際網路從昂貴、專業用途走向普及的歷程，思考當程式技術變得便宜，哪些工作會受到衝擊，又有哪些過去因預算或門檻而難以實現的應用開始值得做。\n\n* 從程式設計到藝術展覽\n以參與藝術家崔廣宇作品製作、於台灣與英國展出的經驗為例，介紹工程能力如何進入藝術創作。分享 Gemini／Antigravity 協助影片理解、素材整理、故事與剪輯構想、旁白及文字發展的過程，以及如何透過程式開發，將藝術家的需求轉化為人物追蹤、骨架與 HUD 等視覺效果。並以 Gemini／Antigravity 重現部分開發流程，展示從想法到可交付成果的過程。\n\n* AI 專家與工程師的價值：成為需求與 AI Agent 之間的橋樑\n即使程式設計的門檻降低，專家與工程師仍具備重要優勢：知道程式與模型能做到哪些事、哪些需求容易實現、哪些看似簡單卻涉及複雜問題，也更能判斷工具選擇與實作方式。以這次藝術合作為例，說明如何理解藝術家的意圖，轉化為 AI Agent 能執行的任務，再將技術上的可能性與限制回饋給藝術家，協助雙方逐步找到可行的創作方向。\n\n* 從藝術作品延伸到更多應用\n以 Blender、ComfyUI、3DGS 與 Three.js 的數位人物原型，以及先建構 3D 場景與動作、再引導 AI 生成影片的流程，展示同一套開發能力如何跨到不同領域。並透過規劃中的 Antigravity 與 Google 生成模型 PoC，探索剪輯、特效與配音的整合可能。\n\n* 價廉？物美！\n技術成本降低，不代表成果的價值也必須降低。當實作變得便宜，我們可以把更多心力放在理解需求、改善品質與探索新用途，讓過去做不起、不值得做的想法，有機會成為真正有用、也有美感的作品。從這些案例思考，工程師如何結合專業判斷與更容易取得的技術，拓展應用、合作對象與工作角色。",
+    "speakers": [
+      {
+        "name": "tjwei",
+        "tagline": "GDE",
+        "bio": "魏澤人是陽明交大 AI 學院副教授、木刻思首席數學家、Google Developer Expert(Machine Learning)，是花蓮.py 及 Google Developer Groups Hualien 的發起者。曾在東華大學應數系服務，也參與培訓數學奧林匹亞國手。喜歡各種有挑戰的性問題，理想的休閒是邊喝茶邊看書。"
+      }
+    ]
+  },
+  {
+    "id": "1366330",
+    "title": "Flutter GenUI × Gemini：讓 Agent 回你一個畫面",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 103",
+    "language": "中文",
+    "level": "Intermediate",
+    "tags": "Open Source, Design, Flutter, AI/ML, Firebase, Mobile",
+    "description": "讓 Gemini 用 Flutter GenUI 自己產生整個畫面，我抽查了 177 個數字，錯了 149 個。\n\n理財 App 錯一個數字，就是錯。所以在 Moniit 裡，我換了一種分工：一樣是 GenUI 加 Gemini，畫面上的數字全對，回應快將近一倍，token 用不到四分之一，而且很多問題根本不必問模型。AI 這段沒有自己的後端，靠 Firebase AI Logic 從 App 直接呼叫 Gemini。\n\n這場從實測數據出發，拆開這個分工怎麼做、什麼時候不該讓模型寫 UI，以及上線前怎麼用 App Check、Remote Config 把關。你會帶走一套已經做進正式 App 的 GenUI 架構。",
+    "outline": "單一講者，40 分鐘（內容約 32 分鐘、Q&A 約 8 分鐘）。內容涵蓋：GenUI 與 A2UI 的核心概念（Catalog、Surface、DataModel、Transport）；兩種 GenUI 做法的實測比較，包括一致率、延遲、token 與數字錯誤率；client-side 架構與實作，以及實作中會直接影響模型行為的細節；GenUI 不等於每次都要問 AI：哪些互動根本不必呼叫模型；上線前的把關，包括 App Check、用量上限、Remote Config 開關與隱私設計；開發與上線過程學到的教訓；並搭配實際 App 的 demo。",
+    "speakers": [
+      {
+        "name": "Yii Chen",
+        "tagline": "Google Developer Expert (Flutter & Dart) | Mobile Lead | Author",
+        "bio": "Yii Chen is a Google Developer Expert (GDE) in Flutter & Dart, Mobile Lead, author, and active contributor to the Flutter developer community.\n\nWith over eight years of mobile engineering experience, he has built and led products across iOS, Android, and Flutter, spanning fintech, social networking, fitness, IoT, and Bluetooth technologies. His technical interests include cross-platform architecture, application performance, developer experience, and AI-assisted software engineering.\n\nHe is the author of Flutter Brave (《Flutter 勇者之書》), published in 2025, and has written over 180 technical articles. He is also an international speaker who regularly shares his experience at developer conferences and community events.\n\nBeyond his engineering work, Yii organizes Flutter Taipei, a developer community with over 5,000 members. Through meetups, technical writing, and open-source collaboration, he is committed to helping developers learn, connect, and grow.\n\n\"Be more than a developer. Be a creator and a user.\""
+      }
+    ]
+  },
+  {
+    "id": "1374676",
+    "title": "AI 不是魔法，是生產線：用 Agy 與各式驅動 (XDD) 打造你的「AI 軟體工廠」",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 201",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Cloud, AI/ML",
+    "description": "我們都體驗過叫 AI 寫程式的快感。但當專案變大，你是否發現自己淪為 AI 的「專屬保母」，無止盡地在對話框裡幫它修 Bug、救架構？這場演講將帶你跳脫 Vibe Coding（直覺寫碼）的陷阱，重新認知：AI 不是一鍵生成的魔法棒，而是算力極強的機器手臂。\n\n我們將以 AI 代理命令列工具 Agy (Antigravity CLI) 為核心，搭配 Google ADK 與 MCP 擴充協議，展示如何將傳統開發流程（PM ➔ UI/UX ➔ RD ➔ TEST ➔ 上線）與軟體工程的「各式驅動 (XDD)」完美融合。帶你從「手工作坊的打字員」，正式升級為佈署 Agentic AI 虛擬團隊的「AI 軟體工廠架構師」！",
+    "outline": "隨著大語言模型的普及，「Vibe Coding」讓開發初期的產出速度達到巔峰，但面對企業級專案時，往往伴隨著上下文遺忘、架構腐化與難以維護的「義大利麵條程式碼」。開發者逐漸意識到，單純的 Prompt Engineering 已經走到極限。\n\n要駕馭失控的 AI，我們需要將軟體工程數十年淬鍊的「各式驅動 (XDD)」重新帶回戰場。本次議程將以 Agy CLI 搭配 Google ADK (Agent Development Kit) 為核心，展示如何建構具備自我修復 (Self-Healing) 能力的 Agentic AI 工作流，並將經典的 SDLC 開發流程，轉化為「AI 軟體工廠」的五大標準產線：\n\n🏭 AI 軟體工廠的五大自動化站點：\n\n【PM 需求解析】原料規格化： 結合 FDD (功能) x SDD (規格)。透過 Jira MCP 抓取工單，捨棄散文詠唱，讓 AI 直接產出 JEV 結構化 JSON 藍圖。\n\n【UI/UX 體驗定調】模具與約束： 結合 DDD (領域驅動)。劃定系統防護罩，約束 AI 嚴格套用企業設計規範，防止越界幻想。\n\n【RD 核心裝配】邏輯加工： 結合 Context Engineering (上下文工程)。動態載入外部 API 文件與技術限制，讓 RD Agent 自動生成與組裝程式碼，遇衝突自動退回協調。\n\n【TEST 品管重工】壓力測試與自動修復： 結合 BDD (行為) x TDD (測試)。這是全場最高潮——將 AI 關進測試沙盒，一旦亮紅燈，系統自動捕捉 Error Log 讓 AI 自我除錯，直到 100% 綠燈通過。\n\n【上線與發布】自動封裝出貨： 結合 Graph Engineering (工作流圖譜)。測試通過後，由 CLI 自動執行 Git Commit、發布 PR，並回寫 Jira 工單，完成全自動閉環。",
+    "speakers": [
+      {
+        "name": "Kevin Chiu",
+        "tagline": "Cloud AI GDE / GDG Taipei Organizer / AI TPM",
+        "bio": "https://www.facebook.com/groups/480913682648708/?ref=group_header"
+      }
+    ]
+  },
+  {
+    "id": "1369935",
+    "title": "用ADK與A2A讓AI Agent在Gemini Platform協作共舞",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 202",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Cloud, AI/ML",
+    "description": "本議程將介紹如何透過Google Agent Development Kit(ADK)與Agent to Agent protocol(A2A)在Gemini platform(前Gemini Enterprise Agent Platform)建立多代理跟企業資訊系統協作的案例。並且會展示兩個Agent企業應用場景。",
+    "outline": "1.企業背景與資訊系統架構介紹\n2.Agent 使用案例影片Demo\n2.1報價Agent-與資訊系統MCP整合\n2.2利潤風險Agent-利用Bigquery蒐集原物料行情，並讓Agent呼叫Bigquery ML評估利潤因原物料波動之風險\n3.Agent 開發經驗分享-Agents-cli, ADK, Agent Runtime\n4.A2A部署在Gemini platform經驗分享\n5.未來發展Open Knowledge Format與Knowledge Catalog",
+    "speakers": [
+      {
+        "name": "劉啟祥",
+        "tagline": "風光Ai窗副總經理",
+        "bio": "目前擔任風光 Ai 窗資訊部副總經理，為傳統製造業與建築產業進行數位轉型與資訊系統現代化。\n之前於中華電信研究院雲端運算研究所擔任計畫副理與高級研究員，亦是院架構師團隊成員之一，協助全院推動系統雲原生化。"
+      }
+    ]
+  },
+  {
+    "id": "1376861",
+    "title": "別再手忙腳亂的開工具！以 Anigravity SDK 實現跨系統 AI Agent 的可視化指揮中心",
+    "type": "session",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 205 + 206",
+    "language": "中文",
+    "level": "Introductory and overview",
+    "tags": "Web, AI/ML",
+    "description": "在生成式 AI 與 Agent 爆發的時代，許多工作者與開發者都為自己配置了各式各樣的「數位分身」——有的 Agent 專門監控專案與工單、有的負責自動生成文件初稿、有的透過 MCP 連線公司資料庫，還有的負責視覺原型產出。\n\n然而，現狀往往是：我們被迫穿梭於 IDE、通訊軟體、終端機與無數個網頁分頁之間，缺乏一個能縱觀全局、快速派工與查看產出的「統一介面」。\n\n本議程將分享如何透過 Anigravity SDK 快速架構一個輕量、反應迅速的 Web 介面，將分散在各處的 AI Agent、自動化腳本與 MCP 工具聚合為一體，打造專屬於自己的「智慧大腦--可視化指揮中心」。\n\n內容從過去將 AI 深度融入日常工作流的實戰經驗出發，解析從碎片化工具到統一可視化介面的演進過程，並展示如何透過一個網頁介面協同多個 Agent 執行複雜任務，讓 AI 真正成為專屬於自己或團隊的貼身主理，打造一目瞭然的高效工作大腦！",
+    "outline": "在生成式 AI 與 Agent 爆發的時代，許多工作者與開發者都為自己配置了各式各樣的「數位分身」——有的 Agent 專門監控專案與工單、有的負責自動生成文件初稿、有的透過 MCP 連線公司資料庫，還有的負責視覺原型產出。\n\n然而，現狀往往是：我們被迫穿梭於 IDE、通訊軟體、終端機與無數個網頁分頁之間，缺乏一個能縱觀全局、快速派工與查看產出的「統一介面」。\n\n本議程將分享如何透過 Anigravity SDK 快速架構一個輕量、反應迅速的 Web 介面，將分散在各處的 AI Agent、自動化腳本與 MCP 工具聚合為一體，打造專屬於自己的「智慧大腦--可視化指揮中心」。\n\n內容從過去將 AI 深度融入日常工作流的實戰經驗出發，解析從碎片化工具到統一可視化介面的演進過程，並展示如何透過一個網頁介面協同多個 Agent 執行複雜任務，讓 AI 真正成為專屬於自己或團隊的貼身主理，打造一目瞭然的高效工作大腦！",
+    "speakers": [
+      {
+        "name": "DaisyLin 林育岑",
+        "tagline": "GDG Taichung Organizer",
+        "bio": "現任 Google Developer Group Taichung 組織者 (Organizer)，熱衷於研究並實踐各種 AI 工具的應用，將其融入日常工作流程，不僅大幅提升了效率，更讓解決問題的過程充滿樂趣。\n\n曾任生技、醫療、軟體產業，歷經多年新創磨練，從新創的快速變革中淬煉成長，並不斷探索如何運用創新方法提升工作效率與樂趣！\n\n在職涯早期，也與敏捷結下不解之緣，並將這份精神應用於團隊協作。曾與技術主管緊密合作，成功帶領面臨挑戰的軟體開發團隊回歸正軌，並將敏捷管理導入地方創生團隊，提升工作效能。\n\n此外，也參與多項翻譯，包括 《中華民國專案管理國家標準 CNS21500、CNS21502》、《ScrumMastery：從優秀到卓越的僕人式領導力》 以及 《喪屍 Scrum 生存指南：邁向真敏捷的復原之路》，這些經驗讓我對敏捷與流程優化有著更全面的理解。\n\n透過持續探索與應用 AI 的無限可能，相信可以共同打造更智慧、更高效的工作模式，讓每一段投入都更有價值。\n\n\n\n敏捷經驗：\n\n1、經歷過多個軟體開發問題團隊，透過導入敏捷，與技術主管合作，帶領團隊一步步發現、釐清問題、邁向正軌。\n\n2、非軟體產業：\n\n(1)2022-2024年，協助3個地方創生團隊，引導團隊導入敏捷式管理，走出經營困境，更有效能帶領團隊前進。\n\n(2)透過敏捷大型框架Less，完成CNS21500、CNS21502之翻譯。\n\n(3)透過敏捷大型框架Nexus，完成ScrumMastery：從優秀到卓越的僕人式領導力之翻譯。"
+      }
+    ]
+  }
+]
