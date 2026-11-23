@@ -202,7 +202,7 @@
   });
   room.addEventListener('change', render);
   search.addEventListener('input', render);
-  Promise.all(['data/agenda.json', 'data/event-flow.json'].map(path => fetch(`${path}?v=20261122-agenda-dialog`).then(response => {
+  Promise.all(['data/agenda.json', 'data/event-flow.json'].map(path => fetch(`${path}?v=20261123-schedule`).then(response => {
     if (!response.ok) throw new Error('Agenda unavailable');
     return response.json();
   }))).then(([data, flow]) => {
