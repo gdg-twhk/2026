@@ -265,26 +265,6 @@
     ]
   },
   {
-    "id": "1384896",
-    "title": "AI-Native Deployment in Media Tech",
-    "type": "session",
-    "start": "12:50",
-    "end": "13:30",
-    "room": "博雅 202",
-    "language": "English",
-    "level": "Advanced",
-    "tags": "AI/ML, Cloud, Web",
-    "description": "A production team needs a highlight edit while footage is still arriving. The AI must find relevant shots, preserve timecodes, respond to editorial changes, and operate within limits on latency, connectivity, and access to sensitive footage. These constraints shape how we deliver AI-native systems in media technology.\n\nDrawing on Zonic's work in professional video production, this session examines three architectural decisions. We will split multimodal understanding, planning, and tool execution across models with explicit handoffs. We will coordinate immediate responses to incoming media with longer-horizon decisions about the edit. Finally, we will keep sensitive workloads and tasks that must survive network disruptions on local infrastructure and use cloud workers for permitted workloads requiring large-scale parallel processing.\n\nA workflow walkthrough will connect these choices to failure recovery, human approval, and delivery criteria. Attendees will leave with practical methods for defining model responsibilities, managing changing production state, and choosing local or cloud execution for video AI workflows.",
-    "outline": "0–4 min | The production brief\nFollow incoming event footage through analysis, shot selection, a rough-cut proposal, and editor review. Define latency, data-access, and delivery constraints.\n\n4–13 min | Divide work across models\nSeparate multimodal understanding, planning, and tool execution. Define handoffs using asset references, timecodes, project versions, and execution results.\n\n13–22 min | Coordinate immediate responses and longer-horizon planning\nHandle new footage and editorial feedback while maintaining the context needed to plan an edit. Examine stale plans and conflicting updates.\n\n22–31 min | Choose local and cloud execution\nRoute work by data sensitivity, connectivity, latency, and compute requirements. Walk through a connection loss and subsequent recovery.\n\n31–36 min | Validate delivery\nReview task completion, timecode accuracy, latency, processing cost, recovery behavior, and the points requiring editor approval.\n\n36–40 min | Q&A",
-    "speakers": [
-      {
-        "name": "Tony Tong",
-        "tagline": "Zonic Tech｜Agentic AI for Video Production",
-        "bio": "Tony Tong 具備工程與研究背景，致力於探索人類專家如何與 AI Agent 在真實工作流程中共同協作。他將 Zonic 的核心定位為 Human–AI Interaction：不是讓 AI 取代創作者，而是讓 Agent 深入專業影視製作流程，承接繁重且高認知負荷的工作，並從專家的修正與品質把關中持續學習。透過 Production Context、多人協作與 Expert–AI Interaction Data Flywheel，Zonic 正在建立一套讓人類專業與 Agentic AI 相互增強的影片製作系統。"
-      }
-    ]
-  },
-  {
     "id": "1375491",
     "title": "Go ADK 實戰：自製你的 cli 助手",
     "type": "workshop",
