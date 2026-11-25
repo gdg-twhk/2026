@@ -29,8 +29,13 @@
     return [session.description, session.outline, session.details].some(realText) ||
       session.speakers.some(speaker => realText(speaker.bio) || realText(speaker.tagline));
   }
+  function captureNotice(session) {
+    const policy = session.photography;
+    return policy?.photo === '禁止' ? '禁止拍照及錄影' : policy?.video === '禁止' ? '禁止錄影' : '';
+  }
   function sessionBody(session) {
     const body = el('div', 'agenda-card-body');
+    if (captureNotice(session)) body.append(el('p', 'agenda-capture', captureNotice(session)));
     addText(body, '議程摘要', session.description);
     if (session.outline && session.outline !== session.description) addText(body, '議程大綱', session.outline);
     if (session.details && session.details !== session.description && session.details !== session.outline) {
@@ -58,6 +63,7 @@
     if (session.language) meta.append(el('span', 'agenda-language', session.language));
     meta.append(el('span', 'agenda-duration', `${session.start}–${session.end}`));
     header.append(meta, el('h3', '', session.title));
+    if (captureNotice(session)) header.append(el('p', 'agenda-capture', captureNotice(session)));
     const foot = el('div', 'agenda-card-foot');
     foot.append(el('p', 'agenda-names', session.speakers.map(s => s.name).join('、') || (session.type === 'cloud' ? '講師即將公布' : '')));
     if (hasContent(session)) {
@@ -143,6 +149,7 @@
           button.setAttribute('aria-label', `${session.start}–${session.end} ${r} ${session.title}，${session.speakers.map(s => s.name).join('、')}`);
           if (session.end !== end) button.append(el('span', 'agenda-cell-time', `${session.start}–${session.end}`));
           button.append(el('strong', 'agenda-cell-title', session.title), el('span', 'agenda-cell-speaker', session.speakers.map(s => s.name).join('、') || (session.type === 'cloud' ? '講師即將公布' : '')));
+          if (captureNotice(session)) button.append(el('span', 'agenda-capture', captureNotice(session)));
           if (interactive) button.addEventListener('click', () => showSession(session));
           cell.append(button);
         } else {
@@ -202,7 +209,7 @@
   });
   room.addEventListener('change', render);
   search.addEventListener('input', render);
-  Promise.all(['data/agenda.json', 'data/event-flow.json'].map(path => fetch(`${path}?v=20261124-v3`).then(response => {
+  Promise.all(['data/agenda.json', 'data/event-flow.json'].map(path => fetch(`${path}?v=20261125-v3`).then(response => {
     if (!response.ok) throw new Error('Agenda unavailable');
     return response.json();
   }))).then(([data, flow]) => {

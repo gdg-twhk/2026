@@ -48,6 +48,18 @@
     "speakers": []
   },
   {
+    "id": "lunch-break",
+    "title": "休息時間",
+    "type": "activity",
+    "start": "12:40",
+    "end": "13:40",
+    "room": "",
+    "description": "",
+    "outline": "",
+    "details": "",
+    "speakers": []
+  },
+  {
     "id": "closing",
     "title": "閉幕謝詞",
     "type": "activity",

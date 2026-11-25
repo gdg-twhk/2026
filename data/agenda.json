@@ -17,7 +17,11 @@
         "tagline": "誠品 APP Team 工程師",
         "bio": "5 年 Flutter 跨平台 App 開發經驗，參與 10+ 項 App 開發、7 款公開上架。iThome 鐵人賽兩屆完賽、累計 60 篇技術文章，2025 年獲優選。2021 年起每天寫 worklog，2025 年 12 月開始每天覆盤，到今年 12 月剛好滿一年；現在用 AI 把每天的紀錄和判斷整理成一套會自己長出來的系統。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1363597",
@@ -37,7 +41,11 @@
         "tagline": "DX at Google DeepMind",
         "bio": "Thor is a Developer Experience Engineer at Google DeepMind, helping developers build their wildest dreams with Gemini. He started his career building customer-facing engineering teams at Stripe across Europe and APAC, helped Supabase grow from 800 to 2M databases, and established the developer experience team at ElevenLabs. He recently moved from Singapore to NYC and joined Google DeepMind to help developers build with the Gemini API and Google AI Studio."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1353992",
@@ -45,7 +53,7 @@
     "type": "session",
     "start": "11:10",
     "end": "11:50",
-    "room": "博雅 102",
+    "room": "博雅 202",
     "language": "中文",
     "level": "Intermediate",
     "tags": "DevOps, AI/ML, Cloud",
@@ -57,7 +65,11 @@
         "tagline": "AI GDE, AI MVP",
         "bio": "作為 AI GDE and AI MVP，Jimmy Liao 致力於智慧製造與金融領域，將 AI 熱潮中的技術債轉化為核心優勢，與客戶協同提升價值與營運效率。\n\n日常生活就是跑步，曾經以跑步為通勤工具之一 (單程 20+ km)。\n\nAs an AI GDE and AI MVP, Jimmy Liao is dedicated to the fields of Smart Manufacturing and Finance, transforming the technical debt from the AI hype into core advantages, and collaborating with clients to elevate value and operational efficiency."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "禁止",
+      "video": "禁止"
+    }
   },
   {
     "id": "1378894",
@@ -77,14 +89,18 @@
         "tagline": "AWS Hero, Microsoft MVP, Google Developer Expert, HKIIT Senior Lecturer",
         "bio": "Cyrus Wong is an accomplished senior lecturer who oversees the Higher Diploma program in Cloud and Data Centre Administration at the Hong Kong Institute of Information Technology (HKIIT) at IVE(Lee Wai Lee) in Hong Kong. He is a passionate advocate for the adoption of cloud technology across various media and events. With his extensive knowledge and expertise, he has earned prestigious recognitions such as AWS AI Hero, Microsoft MVP - Microsoft Foundry, and Google Developer Expert Cloud(AI).\n黃俊彥是香港香港資訊科技學院(HKIIT)位於 IVE(李惠利)資訊科技系雲端系統及數據中心管理高級文憑的高級講師，擁有豐富的知識和專業技能。他熱衷於在各種媒體和活動中推廣雲端技術。由於他的專業知識和專業技能，他獲得亞馬遜雲端運算服務AI英雄、微軟最有價值專家-Microsoft Foundry和雲端AI的Google開發者專家等著名榮譽稱號，是世上唯一能夠獲得IT業界三巨頭同時公認的專家。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1374812",
     "title": "用 Agy CLI 與 Gemini 辦完 DevFest Kaohsiung 2026",
     "type": "session",
-    "start": "12:00",
-    "end": "12:40",
+    "start": "11:10",
+    "end": "11:50",
     "room": "博雅 201",
     "language": "中文",
     "level": "Introductory and overview",
@@ -97,15 +113,19 @@
         "tagline": "GDG Kaohsiung Organizer、Android Developer",
         "bio": "【議程背景與核心價值】\n許多開發者對 AI CLI 工具的印象停留在「幫忙寫 Code 或修 Bug」，但在實際籌備一場大型技術社群活動（DevFest Kaohsiung 2026）的過程中，我嘗試將 GoogleAntigravity (Agy) CLI 與 Gemini 深度整合進所有的非單純寫扣工作流中。\n\n這場分享不是單純的功能介紹，而是真實落地的「從 0 到 1 實戰復盤」。演講將先以淺顯易懂的方式帶聽眾認識 Agy CLI 的運作與擴充架構（Skills / Rules / Plugins / MCP），接著透過四個真實完成的專案案例，展示如何讓 AI 成為解決實務痛點的工作夥伴：\n\n1. 活動官網快速建置與資料連動：透過 Agy CLI 協作開發與維護活動網站。\n2. 缺工具就自己造輪子（Google Drive Plugin）：在處理報名與歷屆活動資料時，為了讓 CLI 能直接讀取 Google Drive 上的文件與試算表，順手開發了一套整合 MCP 與環境自動檢測的 Google Drive 外掛。\n3. 訓練具備個人靈魂的社群發文 Agent：分享如何解決一般 LLM 產出文案常見的「AI 公式感」與「記憶錯亂」，透過結構化的 Rules 與寫作思維調校，讓 Agent 學會我個人的真實發文口氣與社群規範。\n4. 跨界挑戰排版印刷（高雄社群年刊）：分享如何運用 Agy CLI 整理多方社群圖文素材，並協作完成印刷級的《高雄社群年刊》PDF 製作。\n\n【聽眾預期收穫】\n- 快速掌握 Google Antigravity (Agy) CLI 的基礎操作與自訂擴充方式（Skills、Rules、Plugins）。\n- 了解當現成工具不足時，如何快速封裝屬於自己的 CLI Plugin 串接外部服務（以 Google Drive 為例）。\n- 學會如何將個人的「做事習慣與寫作思路」系統化教給 AI Agent，擺脫千篇一律的 AI 罐頭產出。\n- 獲得將 AI 工具從「寫程式助手」延伸至「專案籌備、內容產出與出版排版」全流程的實務靈感。\n\n（註：本議程分享之所有案例皆為籌備 DevFest Kaohsiung 2026 期間真實開發與產出之成果，演講細節與展示範例將依最終活動呈現進一步精煉微調。）"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1360447",
     "title": "Model Armor with LangGraph agent",
     "type": "session",
-    "start": "11:10",
-    "end": "11:50",
-    "room": "博雅 201",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 202",
     "language": "中文",
     "level": "Intermediate",
     "tags": "AI/ML, Cloud",
@@ -117,7 +137,11 @@
         "tagline": "大魔術熊貓工程師 KoKo｜Microsoft AI MVP",
         "bio": "大魔術熊貓工程師 KoKo，Microsoft AI MVP，長期研究 LangChain 與生成式 AI 應用架構，持續於 COSCUP、DevFest 等技術社群分享框架原始碼解析、AI Agent 開發及企業級實務經驗。近期研究重點包含 MCP、Agent Security、工具授權與 AI 系統安全驗證，並公開完整的 30 篇 AI Agent 資安攻防實戰系列。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1387210",
@@ -137,7 +161,11 @@
         "tagline": "Senior Machine Learning Engineer",
         "bio": "議題背景與重要性\n隨著大型語言模型逐漸從研究走向實際產品，Inference Efficiency 已成為 LLM Production 系統的重要課題。\n\n傳統 Autoregressive Decoding 必須逐 Token 執行模型推論，每產生一個 Token 都需要進行一次新的解碼步驟。即使透過 GPU 平行運算與 KV Cache 優化，生成階段仍可能受到 Memory Bandwidth 與 Sequential Dependency 的限制。\n\nSpeculative Decoding 提供了一個不同的優化方向：不再完全依賴大型 Target Model 逐 Token 生成，而是讓較輕量的 Draft Model 先提出多個候選 Token，再由 Target Model 平行驗證。透過這種方式，在維持原始 Target Model 輸出機率分布的前提下，減少大型模型需要執行的 Sequential Decoding Steps。\n\n這項技術也逐漸從最初的獨立 Draft Model，發展到多頭預測、Feature-level Prediction、Dynamic Draft Tree，以及結合模型本身架構的 Multi-Token Prediction。\n技術內容與研究深度\n本議程不會只停留在 Speculative Decoding 的概念介紹，而是選擇幾個具代表性的研究方法，從架構設計的角度比較它們如何改善 Draft Model 的預測能力與 Token Acceptance Rate。\n\n特別是 Gemma 4 的 MTP 設計，將是本議程的技術重點。\n\nGemma 4 提供專用的 Assistant Checkpoints 作為輕量級 Drafter，與 Target Model 配合使用。其設計並非單純額外載入另一個獨立的小型語言模型，而是進一步利用 Target Model 已計算的 Hidden States、共享 Token Embeddings 與 KV Cache，減少重複計算與記憶體開銷。\n\n在實作層面，將深入說明：\n1. Assistant Model Architecture： 分析輕量級 Assistant Model 如何利用 Target Model 的輸出表示進行後續 Token 預測。\n2. KV Cache Sharing： 說明如何共享 Target Model 的 KV Cache，避免 Drafter 重複計算既有 Context。\n3. Candidate Generation & Verification： 解析 Draft Token 的生成、接受與拒絕機制。\n4. vLLM Integration： 說明 MTP 如何整合進 vLLM 的 Speculative Decoding Pipeline，以及實際部署時的設定方式。\n實作與預期收穫\n本議程將以 vLLM 作為推論服務框架，透過 OpenAI-compatible API 展示如何將底層 Inference Optimization 整合到既有應用，而不需要大幅修改原有的 Client-side 程式碼。\n\n透過啟用 Speculative Decoding 前後的效能比較，讓聽眾理解不同加速方法對 Token Throughput、Inter-token Latency 與整體推論效率的影響。\n\n本議程預期讓參與者能夠：\n- 理解 Autoregressive Decoding 的效能瓶頸與 Speculative Decoding 的設計原理。\n- 認識近期具代表性的 Speculative Decoding 研究及其架構演進。\n- 理解 Gemma 4 MTP Assistant Model 的核心架構與 KV Cache Sharing 機制。\n- 學會使用 vLLM 部署模型並啟用 Speculative Decoding。\n- 建立評估 LLM Inference Optimization 的能力，理解不同方法在實際硬體與 Workload 下的適用情境。\n本議程適合對 LLM、Transformer Architecture、Model Inference 或 AI Infrastructure 有興趣的工程師與研究者。具備基本 Transformer 與 LLM 推論知識即可參與，不要求事先熟悉 Speculative Decoding。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1372152",
@@ -157,7 +185,11 @@
         "tagline": "Google Cloud Taiwan Customer Solution Architect",
         "bio": "企業雲端架構師"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1358654",
@@ -177,7 +209,11 @@
         "tagline": "Google Developer Expert for Firebase",
         "bio": "TNL Mediagene 技術長，前愛料理與 INSIDE 共同創辦人與技術長。業餘時喜歡開源與 Google 技術，自 2020 年開始被選為 Google Developer Expert for Firebase。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1376498",
@@ -197,7 +233,11 @@
         "tagline": "UX Lead, NoteIQ Inc. & Community Lead, GDG Manila",
         "bio": "Jastine is a Lead Product Designer, researcher, and community leader specializing in user experience for AI/ML and healthcare platforms, with over 8 years of industry experience across tech, game development, advertising, and startups. Currently serving as UX Lead for NoteIQ, an AI-first Electronic Health Record (EHR) clinical platform, she focuses on complex documentation workflows and scalable design systems.\nA passionate advocate for human-centered technology and accessible design, Jastine holds a Master of Design in Interaction Design and Innovation from National Taipei University of Technology (NTUT), where her thesis research explored AI-driven adaptive accessibility frameworks and telemetry-based interfaces. Her academic and practical work includes developing advanced prototypes using Google AI Studio—such as a thesis-backed Chrome extension that monitors user visual fatigue telemetry to dynamically restructure web layouts, and dataset-driven application flows featuring facial structure and expression analysis.\nDeeply committed to the developer and design community, Jastine serves as a Community Lead for Google Developer Groups (GDG) Manila and an Ambassador for Women Techmakers Manila, actively organizing major technical events and driving initiatives to empower the next wave of builders across the region."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1376434",
@@ -222,7 +262,11 @@
         "tagline": "Security Researcher / Creator of AIDEFEND",
         "bio": "Edward Lee is a Taiwanese-American cybersecurity leader and AI security researcher with over 14 years of experience across the financial services and technology industries. He is the Security Researcher and Creator of AIDEFEND, a practical framework and knowledge base for AI security defenses.\n\nPreviously, Edward served as VP and Lead Cybersecurity Architect at JPMorgan Chase, where he led security architecture and technology risk initiatives. He has also held roles spanning product management, technical consulting, and systems integration at Zoom, Google, and Akamai Technologies.\n\nEdward has spoken at and served as a panelist for international conferences on cybersecurity and AI. He holds a Master of Science in Information Technology – Information Security from Carnegie Mellon University and an MBA from the University of Cambridge. He is also pursuing a part-time Master of Advanced Studies in Artificial Intelligence and Digital Technology at ETH Zurich, with a focus on AI, risk management, and secure systems design."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1380307",
@@ -230,7 +274,7 @@
     "type": "session",
     "start": "12:00",
     "end": "12:40",
-    "room": "博雅 202",
+    "room": "博雅 201",
     "language": "中文",
     "level": "Introductory and overview",
     "tags": "AI/ML",
@@ -242,7 +286,11 @@
         "tagline": "Product Marketing Manager, MSI",
         "bio": "Continuously evolving my role within the PC industry, my career journey has spanned from a Field Application Engineer (FAE) to UX, and currently to Notebook Marketing. I am deeply passionate about exploring how cutting-edge technologies can be practically applied on the front lines."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1375930",
@@ -250,7 +298,7 @@
     "type": "session",
     "start": "15:20",
     "end": "16:00",
-    "room": "博雅 202",
+    "room": "博雅 103",
     "language": "中文",
     "level": "Intermediate",
     "tags": "Flutter, AI/ML",
@@ -262,7 +310,11 @@
         "tagline": "Titansoft Product Developer",
         "bio": "Dustin Liu，從前端、後端一路走到 Flutter，喜歡理解技術背後的運作方式，遇到問題也愛往框架原始碼裡找答案。除了寫產品，也熱衷把開發中遇到的麻煩變成工具。\n\n最近把這份好奇心帶進 AI Agent 與真實產品開發。本著 GIGO（Garbage In, Garbage Out）的態度面對 AI 開發，從需求、上下文到驗收標準都認真對待，探索如何讓 AI 不只寫得快，還能交出經得起驗收的產品。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1375491",
@@ -282,7 +334,11 @@
         "tagline": "Titansoft, Technical Manager",
         "bio": "目前任職於新加坡商鈦坦科技\n擔任 Technical Manager 一職\n目前專注於探索 AI 應用的可能性\n以及落地所需考量的 DevOps 架構"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1372871",
@@ -302,7 +358,11 @@
         "tagline": "人本與科技共融發展協會, 創辦人暨理事長",
         "bio": "擁有超過 16 年的 UX 策略與產品設計經驗，現為 Women Techmakers (WTM) Taipei Ambassador 與人本與科技共融發展協會理事長。自 2020 年起累計主辦 112 場跨領域技術活動、串聯 1,100+ 位講者，並投入 26 場公開演講與 240 小時的職涯導師輔導，影響超過 6,800+ 名科技人才。擅長將十餘年的 UX 設計洞察與商業策略結合，轉化為與業界夥伴交流的實戰養分，透過社群將真實問題帶入討論、與大家一同探索並解決問題。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1371524",
@@ -322,7 +382,11 @@
         "tagline": "Google, Principal Architect for FSI, GKE Specialist, Gemini AI evangelist",
         "bio": "apiVersion: shawn.user-guide.io/v1\nkind: practitioner\nmetadata:\n  name: shawnho\n  labels:\n    nickname: dr.ho\n    motto: show.but.dont.tell\n    enjoy: sharing\n    love: [genai, fde, ai-ready EVERYTHING, container, iac, newthings]\nspec:\n  fans: |\n    genai,sre,servicemesh,agile,automation,SRE\n  tendencies: \n    - genai\n    - opentelemetry\n    - kubernetes\n    - servicemesh"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1349853",
@@ -342,7 +406,11 @@
         "tagline": "Mobile Developer",
         "bio": "從 2005 年開始接觸 Objective C 語言已經 macOS App 開發，從 2008 年開始開發 iOS app，從 2011 年開始在 KKBOX 工作，參與過 KKBOX 的 macOS、iOS、tvOS 與 watchOS 版本開發，以及 KKTIX、Uta Pass 的 iOS 版本，之前也參與過雅虎輸入發以及無蝦皮輸入法 macOS 版本。從 2018 年開始接觸 Flutter。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1376495",
@@ -362,15 +430,19 @@
         "tagline": "Co-founder & CEO, FlowStacks | Building infrastructure and developer tools for AI agents",
         "bio": "Shilpa Mitra is the co-founder and CEO of FlowStacks, where she works on AI-agent reliability, verification, and developer tooling. She has more than 15 years of software development experience and over eight years of experience building AI-based systems. She previously co-founded ShufflUp, a VC-funded Estonian AI trading startup. Her current work focuses on verification methods for agentic software, including open-source approaches to finding hidden assumptions and gaps in AI-generated tests. She also contributes to the AI research community as a reviewer focused on agents, evaluation, and reliability."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1367345",
     "title": "LINE Bot 進化論：從 GenAI 到 Agent Platform",
     "type": "session",
-    "start": "15:20",
-    "end": "16:00",
-    "room": "博雅 103",
+    "start": "14:30",
+    "end": "15:10",
+    "room": "博雅 202",
     "language": "中文",
     "level": "Introductory and overview",
     "tags": "Others",
@@ -382,7 +454,11 @@
         "tagline": "LINE 台灣 Tech Evangelist",
         "bio": "Hi，我是 Zona，來自 LINE Taiwan DevRel 團隊。 負責規劃與推廣開發者關係相關活動，包含技術社群合作、品牌推廣與內容策展， 持續推動 LINE 與開發者社群的連結與交流。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1374423",
@@ -390,7 +466,7 @@
     "type": "session",
     "start": "16:10",
     "end": "16:50",
-    "room": "博雅 202",
+    "room": "博雅 103",
     "language": "中文",
     "level": "Intermediate",
     "tags": "DevOps, Others",
@@ -407,21 +483,11 @@
         "tagline": "國泰產險",
         "bio": "國泰產險"
       }
-    ]
-  },
-  {
-    "id": "google-cloud-enablement",
-    "title": "AI Agent Essentials on Google Cloud",
-    "type": "cloud",
-    "start": "13:40",
-    "end": "17:00",
-    "room": "普通教學館 103",
-    "language": "",
-    "level": "",
-    "tags": "Google Cloud, AI Agent",
-    "description": "Google Cloud 專場。詳細議程與講師資訊將陸續公布。",
-    "outline": "",
-    "speakers": []
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1352595",
@@ -441,7 +507,11 @@
         "tagline": "Google Solutions Architect, AIoT, Conversational AI, Generative AI",
         "bio": "在 Google Cloud 擔任 Solutions Architect ，專注領域為IoT, AIoT, Conversational AI和Generative AI。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1370298",
@@ -461,7 +531,11 @@
         "tagline": "Cloud GDE",
         "bio": "https://sakanamax.github.io/"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1373416",
@@ -481,15 +555,19 @@
         "tagline": "Lead Consultant @ Thoughtworks | GDE Android",
         "bio": "Software Engineer for 10+ years, Google Developers for Android, Developer of first ever election information app for Myanmar. I consider coding as a craftsmanship."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1378211",
     "title": "給 Vibe Coder 的資安入門",
     "type": "session",
-    "start": "13:40",
-    "end": "14:20",
-    "room": "博雅 201",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 202",
     "language": "中文",
     "level": "Introductory and overview",
     "tags": "Cloud, Firebase, Cyber Security, AI/ML",
@@ -501,15 +579,19 @@
         "tagline": "GDG Taichung  Organizer",
         "bio": "水映工作坊創辦人。於企業中，以資訊顧問、講師等身份投入協助各種跨場域與跨不同領域所需要之軟體整合，亦善用 AI 加速產品開發或是解決零散問題。\n\n於社群中，是一個愛投入技術研究的 NPC，以 Flutter/Android/Firebase 為主要分享主軸，常出沒於 Google Developer Group Taichung/Taichung 的 Organizer"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1374925",
     "title": "AgentOps: 以 ADK x MCP 打造前瞻型 GCP IAM 自治系統",
     "type": "session",
-    "start": "14:30",
-    "end": "15:10",
-    "room": "博雅 202",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 201",
     "language": "中文",
     "level": "Intermediate",
     "tags": "Cloud, AI/ML, DevOps",
@@ -521,7 +603,11 @@
         "tagline": "主任工程師",
         "bio": "現任 GCP x DataOps，長期專注於 Google Cloud 基礎架構與最佳實踐、Terraform GitOps、零信任 IAM 治理與 SRE 可觀測性實踐。熱衷於探索 Generative AI 與自主 Agent 在現代平台工程中的落地，近期致力於將 Google ADK、語音多模態與 FastMCP 導入企業級權限與維運管線，推動「AgentOps」自主治理架構，致力於消除繁瑣的工程維運庶務 (Toil)，打造兼具安全合規與高開發者體驗 (DevEx) 的現代雲端自治系統。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1378996",
@@ -541,7 +627,11 @@
         "tagline": "Full-stack Developer & Community Organizer · WordPress Taiwan Community",
         "bio": "李小胖 Bruce Lee，哈拉設計創辦人、全端開發者，擁有超過 10 年網站開發與自由接案經驗，長期投入 WordPress、Web 開發、AI 與自動化應用。目前為 WordPress 台北小聚主辦人及 GDG Taipei Organizer，持續參與技術社群與開源活動。近年專注於 AI Agent、WebMCP、生成式 AI 與開發工作流，探索如何讓 AI 從「回答問題」進一步理解網站、操作工具，並真正參與產品開發與日常工作流程。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1387677",
@@ -561,14 +651,18 @@
         "tagline": "Developer Relations Engineer, Google Cloud",
         "bio": "身為 Google Cloud 的開發者關係工程師 (Developer Relations Engineer)，Edward 致力於從開發者的視角推廣 Google Cloud 技術。他目前的技術重點聚焦於 DevSecOps、軟體供應鏈安全 (Software Supply Chain Security) 以及基於 ADK (Agent Development Kit) 的 Agentic AI 應用開發。他協助開發者進行導入、部署、優化及擴展，並定期與各類開發者社群互動，深入了解開發者的需求與回饋。在擔任現職之前，Edward曾任職 Google Cloud 客戶解決方案架構師長達九年，期間協助涵蓋遊戲、零售電商、運輸、高科技及傳統製造等多元產業的客戶，運用 Google Cloud 的產品與技術現代化其資訊基礎建設與應用服務。他不僅擅長解決客戶的商業難題並提升技術能力，也是推動企業數位轉型的關鍵倡導者，並同時擔任多家科技新創公司的技術導師。\n\n在加入 Google 之前，Edward 擁有超過 13 年的後端工程與網站可靠性工程 (SRE) 專業經驗。此外，他心中一直有個有趣的夢想：有朝一日能親自駕駛 Google Maps 街景車。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1348483",
     "title": "Everything as Code：用 Google Antigravity, ADK 與 Open-X 驅動文件自動化",
     "type": "session",
-    "start": "15:20",
-    "end": "16:00",
+    "start": "11:10",
+    "end": "11:50",
     "room": "博雅 102",
     "language": "中文",
     "level": "Introductory and overview",
@@ -581,14 +675,18 @@
         "tagline": "Google GenAI GDE",
         "bio": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師 和 在軟體業擔任 MLOps 客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過 80 篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1377254",
     "title": "裝了工具不等於自動化：用 Antigravity 打造「可驗證」的 AI 開發工作流",
     "type": "session",
-    "start": "11:10",
-    "end": "11:50",
+    "start": "12:00",
+    "end": "12:40",
     "room": "博雅 202",
     "language": "中文",
     "level": "Intermediate",
@@ -601,14 +699,18 @@
         "tagline": "奧斯數位 技術總監",
         "bio": "現任微軟最有價值專家，樂於研究與分享新技術，喜歡使用各項網頁技術解決各項問題。主要專研 .NET 相關 Solution 為主，以及 Angular & Vue.js 等前端技術，並在第十二屆 iT 邦幫忙鐵人賽中的 Modern Web 組獲得佳作。於 2022 年出版 ASP.NET Core 6 實戰守則：超易懂的跨平台開發入門教學，並榮登天瓏年度排行第二名"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1361498",
     "title": "當 API Gateway 遇上 MCP：讓企業既有 API 變成 AI Agent 的工具",
     "type": "session",
-    "start": "11:10",
-    "end": "11:50",
+    "start": "12:00",
+    "end": "12:40",
     "room": "博雅 205 + 206",
     "language": "中文",
     "level": "Intermediate",
@@ -621,7 +723,11 @@
         "tagline": "Full stack developer",
         "bio": "A full-stack developer. I like open-source solutions and new technologies. Currently a DevOps/SRE in the insurance industry."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1368715",
@@ -641,7 +747,11 @@
         "tagline": "Duotify Inc, CTO",
         "bio": "Currently the CTO of \"Duotify Inc.\" Awarded the Google Developer Expert (GDE) in ML/GenAI in 2024. Awarded the Google Developer Expert (GDE) in Angular in 2018. Selected as a Microsoft Most Valuable Professional (MVP) for 17 consecutive terms. Recognized as a Microsoft Regional Director in 2019. Proficient in technologies related to Angular, JavaScript, .NET, C#, Java, Go, Docker, and Kubernetes. Skilled in DevOps, organizational culture building, software team construction, and management. Passionate about sharing knowledge."
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1376458",
@@ -661,15 +771,19 @@
         "tagline": "GDE",
         "bio": "魏澤人是陽明交大 AI 學院副教授、木刻思首席數學家、Google Developer Expert(Machine Learning)，是花蓮.py 及 Google Developer Groups Hualien 的發起者。曾在東華大學應數系服務，也參與培訓數學奧林匹亞國手。喜歡各種有挑戰的性問題，理想的休閒是邊喝茶邊看書。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1366330",
     "title": "Flutter GenUI × Gemini：讓 Agent 回你一個畫面",
     "type": "session",
-    "start": "16:10",
-    "end": "16:50",
-    "room": "博雅 103",
+    "start": "15:20",
+    "end": "16:00",
+    "room": "博雅 102",
     "language": "中文",
     "level": "Intermediate",
     "tags": "Open Source, Design, Flutter, AI/ML, Firebase, Mobile",
@@ -681,7 +795,11 @@
         "tagline": "Google Developer Expert (Flutter & Dart) | Mobile Lead | Author",
         "bio": "Yii Chen is a Google Developer Expert (GDE) in Flutter & Dart, Mobile Lead, author, and active contributor to the Flutter developer community.\n\nWith over eight years of mobile engineering experience, he has built and led products across iOS, Android, and Flutter, spanning fintech, social networking, fitness, IoT, and Bluetooth technologies. His technical interests include cross-platform architecture, application performance, developer experience, and AI-assisted software engineering.\n\nHe is the author of Flutter Brave (《Flutter 勇者之書》), published in 2025, and has written over 180 technical articles. He is also an international speaker who regularly shares his experience at developer conferences and community events.\n\nBeyond his engineering work, Yii organizes Flutter Taipei, a developer community with over 5,000 members. Through meetups, technical writing, and open-source collaboration, he is committed to helping developers learn, connect, and grow.\n\n\"Be more than a developer. Be a creator and a user.\""
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1374676",
@@ -701,15 +819,19 @@
         "tagline": "Cloud AI GDE / GDG Taipei Organizer / AI TPM",
         "bio": "https://www.facebook.com/groups/480913682648708/?ref=group_header"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   },
   {
     "id": "1369935",
     "title": "用ADK與A2A讓AI Agent在Gemini Platform協作共舞",
     "type": "session",
-    "start": "15:20",
-    "end": "16:00",
-    "room": "博雅 201",
+    "start": "16:10",
+    "end": "16:50",
+    "room": "博雅 202",
     "language": "中文",
     "level": "Introductory and overview",
     "tags": "Cloud, AI/ML",
@@ -721,14 +843,18 @@
         "tagline": "風光Ai窗副總經理",
         "bio": "目前擔任風光 Ai 窗資訊部副總經理，為傳統製造業與建築產業進行數位轉型與資訊系統現代化。\n之前於中華電信研究院雲端運算研究所擔任計畫副理與高級研究員，亦是院架構師團隊成員之一，協助全院推動系統雲原生化。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
   },
   {
     "id": "1376861",
     "title": "別再手忙腳亂的開工具！以 Anigravity SDK 實現跨系統 AI Agent 的可視化指揮中心",
     "type": "session",
-    "start": "12:00",
-    "end": "12:40",
+    "start": "11:10",
+    "end": "11:50",
     "room": "博雅 205 + 206",
     "language": "中文",
     "level": "Introductory and overview",
@@ -741,6 +867,61 @@
         "tagline": "GDG Taichung Organizer",
         "bio": "現任 Google Developer Group Taichung 組織者 (Organizer)，熱衷於研究並實踐各種 AI 工具的應用，將其融入日常工作流程，不僅大幅提升了效率，更讓解決問題的過程充滿樂趣。\n\n曾任生技、醫療、軟體產業，歷經多年新創磨練，從新創的快速變革中淬煉成長，並不斷探索如何運用創新方法提升工作效率與樂趣！\n\n在職涯早期，也與敏捷結下不解之緣，並將這份精神應用於團隊協作。曾與技術主管緊密合作，成功帶領面臨挑戰的軟體開發團隊回歸正軌，並將敏捷管理導入地方創生團隊，提升工作效能。\n\n此外，也參與多項翻譯，包括 《中華民國專案管理國家標準 CNS21500、CNS21502》、《ScrumMastery：從優秀到卓越的僕人式領導力》 以及 《喪屍 Scrum 生存指南：邁向真敏捷的復原之路》，這些經驗讓我對敏捷與流程優化有著更全面的理解。\n\n透過持續探索與應用 AI 的無限可能，相信可以共同打造更智慧、更高效的工作模式，讓每一段投入都更有價值。\n\n\n\n敏捷經驗：\n\n1、經歷過多個軟體開發問題團隊，透過導入敏捷，與技術主管合作，帶領團隊一步步發現、釐清問題、邁向正軌。\n\n2、非軟體產業：\n\n(1)2022-2024年，協助3個地方創生團隊，引導團隊導入敏捷式管理，走出經營困境，更有效能帶領團隊前進。\n\n(2)透過敏捷大型框架Less，完成CNS21500、CNS21502之翻譯。\n\n(3)透過敏捷大型框架Nexus，完成ScrumMastery：從優秀到卓越的僕人式領導力之翻譯。"
       }
-    ]
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "禁止"
+    }
+  },
+  {
+    "id": "1393833",
+    "title": "Agent 記憶，餡料滿到邊：用 Google ADK x MongoDB Atlas 打造會記住你的 Agent，以紅豆餅 Agent 為例",
+    "type": "session",
+    "start": "13:40",
+    "end": "14:20",
+    "room": "博雅 201",
+    "language": "中文",
+    "tags": "AI/ML, Cloud, MongoDB",
+    "description": "用 Google ADK 和 Gemini 打造一個美食 Agent，以紅豆餅為例：它會記得你吃過哪些店、你的評分和口味偏好，並根據這些給出推薦。過程中，你會學到怎麼設計 Agent 記憶，以及怎麼透過 ADK 的 MongoDB 整合，把記憶實作在 MongoDB Atlas 上。",
+    "outline": "- 介紹一個用 ADK + Gemini 做的簡單紅豆餅 Agent，它什麼都記不住\n- Agent 記憶：類型（長期、短期）和生命週期（CRUD）\n- 把 Agent 記憶整合進 MongoDB",
+    "speakers": [
+      {
+        "name": "Brian Chang",
+        "tagline": "MongoDB 台灣解決方案架構師",
+        "bio": "大家好，我是 Brian 張凱霖，目前在企業擔任架構師與 TPM。\n一路從前後端開發者到 PM，架構師，近期開始摸索 AI，希望透過技術交流分享應用的連結整合，簡化架構與加速開發。"
+      }
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
+  },
+  {
+    "id": "1396206",
+    "title": "使用 Google Cloud 打造 AI Agent：入門指南",
+    "type": "cloud",
+    "start": "13:40",
+    "end": "17:00",
+    "room": "普通教學館 103",
+    "language": "中文",
+    "tags": "AI/ML, Cloud",
+    "description": "還在獨自扛下所有瑣碎工作嗎？是時候從親力親為的角色，升級成管理 AI 數位團隊的 Agent Manager 了！\n這門 Google Cloud AI 實戰課程，帶你跳脫「只是跟 AI 聊天」的日常，學會用 Gemini 處理例行事務，並透過 Gemini platform 打造真正了解你業務流程與規範的專屬 AI 代理人。\n\n✨ 你將帶走 4 大關鍵能力：\n- 區分「圖書館員型」與「幕僚長型」AI 代理人的應用場景\n- 運用 Agentic Build Loop 主導建構實用且有所依據的 AI 代理人\n- 撰寫清晰的 Playbooks，將重複性工作轉為自動化流程\n- 導入 Human-in-the-Loop 安全把關機制，兼顧隱私安全與風險控管\n\n無論你是想把時間留給策略的部門主管、負責優化流程的變革推動者，還是重視合規與架構的策略架構師，只要你了解自己的業務流程、對生成式 AI 有基本認識，就能從這堂課找到把團隊影響力放大的解法。",
+    "outline": "還在獨自扛下所有瑣碎工作嗎？是時候從親力親為的角色，升級成管理 AI 數位團隊的 Agent Manager 了！\n這門 Google Cloud AI 實戰課程，帶你跳脫「只是跟 AI 聊天」的日常，學會用 Gemini 處理例行事務，並透過 Gemini platform 打造真正了解你業務流程與規範的專屬 AI 代理人。\n\n✨ 你將帶走 4 大關鍵能力：\n- 區分「圖書館員型」與「幕僚長型」AI 代理人的應用場景\n- 運用 Agentic Build Loop 主導建構實用且有所依據的 AI 代理人\n- 撰寫清晰的 Playbooks，將重複性工作轉為自動化流程\n- 導入 Human-in-the-Loop 安全把關機制，兼顧隱私安全與風險控管\n\n無論你是想把時間留給策略的部門主管、負責優化流程的變革推動者，還是重視合規與架構的策略架構師，只要你了解自己的業務流程、對生成式 AI 有基本認識，就能從這堂課找到把團隊影響力放大的解法。",
+    "speakers": [
+      {
+        "name": "Hansheng Chiu",
+        "tagline": "Google Cloud Authorized Trainer",
+        "bio": ""
+      },
+      {
+        "name": "Bruce Lee",
+        "tagline": "Full-stack Developer & Community Organizer · WordPress Taiwan Community",
+        "bio": "李小胖 Bruce Lee，哈拉設計創辦人、全端開發者，擁有超過 10 年網站開發與自由接案經驗，長期投入 WordPress、Web 開發、AI 與自動化應用。目前為 WordPress 台北小聚主辦人及 GDG Taipei Organizer，持續參與技術社群與開源活動。近年專注於 AI Agent、WebMCP、生成式 AI 與開發工作流，探索如何讓 AI 從「回答問題」進一步理解網站、操作工具，並真正參與產品開發與日常工作流程。"
+      }
+    ],
+    "photography": {
+      "photo": "可",
+      "video": "可"
+    }
   }
 ]
