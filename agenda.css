@@ -140,5 +140,12 @@
 .agenda-table .agenda-pending-cell{vertical-align:middle}
 .agenda-pending-cell .agenda-cell-empty{text-align:center;padding:24px 12px;letter-spacing:.03em}
 
-.agenda-capture{display:block;font-size:12px;line-height:1.6;color:#9c342c;font-weight:600;margin:0;padding:4px 8px;background:#fff0ed;border-radius:4px;width:fit-content}
-.agenda-card-header>.agenda-capture{margin:0 0 16px}
+/* Small, inline capture notices keep titles and timetable rows aligned. */
+.agenda-capture{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;color:#9c342c;background:#fff0ed;border:0;border-radius:4px;padding:4px;margin:0;flex:none;line-height:1}
+.agenda-capture svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.agenda-cell-speaker .agenda-capture{margin-left:6px}
+.agenda-card-meta .agenda-capture{margin-left:2px}
+.agenda-dialog .agenda-card-body>.agenda-capture{color:#9c342c;margin-bottom:4px}
+
+.agenda-card-header>.agenda-capture{margin:0 0 14px;width:fit-content}
+.agenda-cell>.agenda-capture{align-self:flex-start}

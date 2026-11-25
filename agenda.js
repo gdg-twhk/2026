@@ -33,9 +33,28 @@
     const policy = session.photography;
     return policy?.photo === '禁止' ? '禁止拍照及錄影' : policy?.video === '禁止' ? '禁止錄影' : '';
   }
+  function captureIcon(session) {
+    const label = captureNotice(session);
+    const badge = el('span', 'agenda-capture');
+    badge.setAttribute('role', 'img');
+    badge.setAttribute('aria-label', label);
+    badge.title = label;
+    const paths = session.photography?.photo === '禁止'
+      ? ['M14.5 4H9.5L8 7H4v13h20V7h-4l-1.5-3z', 'M18 13a4 4 0 1 1-8 0 4 4 0 0 1 8 0']
+      : ['M3 6h14v16H3z', 'm17 11 8-4v14l-8-4'];
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 28 28');
+    svg.setAttribute('aria-hidden', 'true');
+    for (const d of [...paths, 'M3 3 25 25']) {
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', d); svg.append(path);
+    }
+    badge.append(svg);
+    return badge;
+  }
   function sessionBody(session) {
     const body = el('div', 'agenda-card-body');
-    if (captureNotice(session)) body.append(el('p', 'agenda-capture', captureNotice(session)));
+    if (captureNotice(session)) body.append(captureIcon(session));
     addText(body, '議程摘要', session.description);
     if (session.outline && session.outline !== session.description) addText(body, '議程大綱', session.outline);
     if (session.details && session.details !== session.description && session.details !== session.outline) {
@@ -62,8 +81,9 @@
     meta.append(el('span', 'agenda-kind', kind), el('span', 'agenda-room', session.room));
     if (session.language) meta.append(el('span', 'agenda-language', session.language));
     meta.append(el('span', 'agenda-duration', `${session.start}–${session.end}`));
-    header.append(meta, el('h3', '', session.title));
-    if (captureNotice(session)) header.append(el('p', 'agenda-capture', captureNotice(session)));
+    header.append(meta);
+    header.append(el('h3', '', session.title));
+    if (captureNotice(session)) header.append(captureIcon(session));
     const foot = el('div', 'agenda-card-foot');
     foot.append(el('p', 'agenda-names', session.speakers.map(s => s.name).join('、') || (session.type === 'cloud' ? '講師即將公布' : '')));
     if (hasContent(session)) {
@@ -149,7 +169,7 @@
           button.setAttribute('aria-label', `${session.start}–${session.end} ${r} ${session.title}，${session.speakers.map(s => s.name).join('、')}`);
           if (session.end !== end) button.append(el('span', 'agenda-cell-time', `${session.start}–${session.end}`));
           button.append(el('strong', 'agenda-cell-title', session.title), el('span', 'agenda-cell-speaker', session.speakers.map(s => s.name).join('、') || (session.type === 'cloud' ? '講師即將公布' : '')));
-          if (captureNotice(session)) button.append(el('span', 'agenda-capture', captureNotice(session)));
+          if (captureNotice(session)) button.querySelector('.agenda-cell-title').after(captureIcon(session));
           if (interactive) button.addEventListener('click', () => showSession(session));
           cell.append(button);
         } else {
